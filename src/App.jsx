@@ -2,12 +2,20 @@ import { useState } from 'react'
 
 import './App.css'
 
+// COMPONENTS
+import Navbar from './Components/Navbar'
+
+
+// PAGES
+import Home from './Pages/Home'
+
 function App() {
 
 
   return (
     <>
-      <h1>HELLO</h1>
+      <Navbar />
+      <Home />
     </>
   )
 }
