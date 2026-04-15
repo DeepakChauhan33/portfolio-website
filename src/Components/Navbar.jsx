@@ -1,9 +1,14 @@
 import React from 'react'
 
+
+// ICONS
+import { IoIosSunny } from "react-icons/io";
+
+
 const Navbar = () => {
     return (
 
-        <header className='w-full bg-gray-400 px-10 '>
+        <header className='w-full bg-transparent px-10 fixed top-0 right-0 opacity-60 border-b '>
 
             <nav className='h-17  flex justify-around items-center'>
 
@@ -26,6 +31,9 @@ const Navbar = () => {
                 <div className='flex gap-6'>
                     <button className='border w-30 text-md font-semibold py-1.5 '>Talk</button>
                     <button className='border w-30 text-md font-semibold py-1.5 '>Download CV</button>
+                    <button>
+                        <IoIosSunny />
+                    </button>
                 </div>
             </nav>
 

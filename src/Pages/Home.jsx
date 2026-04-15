@@ -1,10 +1,16 @@
 import React from 'react'
 
+
+// SECTION
+import Hero from '../Sections/Hero';
+
 const Home = () => {
     return (
-        <div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aliquid saepe corrupti rem sapiente! Eius deserunt architecto doloremque ipsum ducimus!</p>
-        </div>
+        <>
+
+            <Hero />
+
+        </>
     )
 }
 
