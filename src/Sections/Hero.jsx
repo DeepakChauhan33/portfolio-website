@@ -2,41 +2,29 @@ import React from 'react'
 
 const Hero = () => {
   return (
-    <main className='h-[117vh] pt-25  bg-blue-100 p-10'>
-
-      <section className='border p-3'>
+    <main className='h-screen pt-19  lg:pt-25  bg-blue-100 p-2 sm:p-4 md:p-7 lg:p-10'>
 
 
-        {/* LEFT DIV */}
-        <div className='w-[40%] border p-2 flex- flex-col space-y-6 '>
-
-          {/* HEADING */}
-          <h1 className='text-4xl'>
-            Lorem ipsum dolor sit amet.
-          </h1>
+      <section className=' flex flex-col justify-center items-center gap-8 h-full bg-green-100'>
 
 
-          {/* DESCRIPTION */}
-          <div>
-            <p className='text-xl'>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio atque quos quaerat deserunt vero totam facilis exercitationem ipsum odio reprehenderit eligendi, perferendis autem molestiae? Ratione excepturi qui cumque beatae eligendi.
-            </p>
-          </div>
+        <h2 className='text-3xl xs:text-4xl sm:text-6xl lg:text-7xl text-center'>
+          Hi, I'm Deepak, a <br />
+          <strong className='text-green-300'> Frontend</strong> Developer
+        </h2>
 
 
-          {/* ABOUT ME BUTTON */}
-          <div>
-            <button className='px-6 py-1.5 border bg-green-100'>
-              ABout me
-            </button>
-          </div>
+        <p className='w-full md:w-1/2 text-center text-sm sm:text-md lg:text-lg font-normal'>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus inventore dolor tempora nihil, asperiores ab mollitia aliquid reprehenderit placeat dolorum?
+        </p>
 
 
-          {/* SOCIAL LINKS */}
-          <div className='border py-5'>
-
-          </div>
+        <div className='border p-3'>
+          <button className='border px-4 py-2 md:px-5 md:py-3 lg:py-4'>Download CV</button>
+          <button className='border px-4 py-2 md:px-5 md:py-3 lg:py-4'>Connect</button>
         </div>
+
+
       </section>
 
     </main>

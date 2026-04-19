@@ -10,7 +10,7 @@ const Navbar = () => {
 
         <header className='w-full bg-transparent px-10 fixed top-0 right-0 opacity-60 border-b '>
 
-            <nav className='h-17  flex justify-around items-center'>
+            <nav className='h-17  flex justify-between lg:justify-around items-center'>
 
                 {/* Logo */}
                 <div>
@@ -19,7 +19,7 @@ const Navbar = () => {
 
 
                 {/* Section Links  */}
-                <ul className=' flex justify-between gap-15 border rounded-md px-5 py-2'>
+                <ul className='hidden md:flex justify-between gap-10 lg:gap-15 border rounded-md px-5 py-2'>
                     <li className='text-lg font-semibold border-b-2 border-transparent hover:border-black hover:border-b-2 hover:text-white cursor-pointer'>Skills</li>
                     <li className='text-lg font-semibold border-b-2 border-transparent hover:border-black hover:border-b-2 hover:text-white cursor-pointer'>Projects</li>
                     <li className='text-lg font-semibold border-b-2 border-transparent hover:border-black hover:border-b-2 hover:text-white cursor-pointer'>About</li>
@@ -28,9 +28,8 @@ const Navbar = () => {
 
 
 
-                <div className='flex gap-6'>
-                    <button className='border w-30 text-md font-semibold py-1.5 '>Talk</button>
-                    <button className='border w-30 text-md font-semibold py-1.5 '>Download CV</button>
+                <div className='flex gap-2 lg:gap-6'>
+                    <button className='border px-4 lg:w-30 text-md font-semibold py-1.5 '>Talk</button>
                     <button>
                         <IoIosSunny />
                     </button>
