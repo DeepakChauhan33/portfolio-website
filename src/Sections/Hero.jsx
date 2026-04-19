@@ -2,10 +2,10 @@ import React from 'react'
 
 const Hero = () => {
   return (
-    <main className='h-screen pt-19  lg:pt-25  bg-blue-100 p-2 sm:p-4 md:p-7 lg:p-10'>
+    <section className='h-[90vh] bg-blue-100 p-2 sm:p-4 md:p-7 lg:p-15 '>
 
 
-      <section className=' flex flex-col justify-center items-center gap-8 h-full bg-green-100'>
+      <div className=' flex flex-col justify-center items-center gap-8 h-full bg-green-100'>
 
 
         <h2 className='text-3xl xs:text-4xl sm:text-6xl lg:text-7xl text-center'>
@@ -19,15 +19,15 @@ const Hero = () => {
         </p>
 
 
-        <div className='border p-3'>
-          <button className='border px-4 py-2 md:px-5 md:py-3 lg:py-4'>Download CV</button>
-          <button className='border px-4 py-2 md:px-5 md:py-3 lg:py-4'>Connect</button>
+        <div className='space-x-6 p-3'>
+          <button className='border px-4 py-2 md:px-6 md:py-3 lg:px-8 '>Download CV</button>
+          <button className='border px-4 py-2 md:px-6 md:py-3 lg:px-8 '>Connect</button>
         </div>
 
 
-      </section>
+      </div>
 
-    </main>
+    </section>
   )
 }
 

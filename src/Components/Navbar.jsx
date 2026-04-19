@@ -8,7 +8,7 @@ import { IoIosSunny } from "react-icons/io";
 const Navbar = () => {
     return (
 
-        <header className='w-full bg-transparent px-10 fixed top-0 right-0 opacity-60 border-b '>
+        <header className='w-full bg-transparent px-10  border-b '>
 
             <nav className='h-17  flex justify-between lg:justify-around items-center'>
 
