@@ -10,6 +10,7 @@ import Navbar from './Components/Navbar'
 import Home from './Pages/Home'
 import BottomNavbar from './Components/BottomNavbar'
 import Skill from './Sections/Skill'
+import About from './Sections/About'
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
     <>
       <Navbar />
       <Home />
+      <About />
       <Skill />
       <div className='bolck md:hidden'>
         <BottomNavbar />
