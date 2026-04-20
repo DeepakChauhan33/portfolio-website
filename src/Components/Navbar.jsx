@@ -1,11 +1,19 @@
-import React from 'react'
+import React, { useContext } from 'react'
 
+
+import { ThemeContext } from '../Context/ThemeProvider';
 
 // ICONS
 import { IoIosSunny } from "react-icons/io";
 
 
 const Navbar = () => {
+
+    const { theme, toggleTheme } = useContext(ThemeContext);
+
+    console.log(theme);
+
+
     return (
 
         <header className='w-full bg-transparent px-10  border-b '>
@@ -30,7 +38,7 @@ const Navbar = () => {
 
                 <div className='flex gap-2 lg:gap-6'>
                     <button className='border px-4 lg:w-30 text-md font-semibold py-1.5 '>Talk</button>
-                    <button>
+                    <button onClick={() => toggleTheme("light")}>
                         <IoIosSunny />
                     </button>
                 </div>

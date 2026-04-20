@@ -1,5 +1,7 @@
 import React from 'react'
-import SkillBar from '../Components/SkillBar'
+import SkillBar from '../Components/SkillBar';
+
+import skill from '../Services/skillData'
 
 const Skill = () => {
   return (
@@ -18,45 +20,14 @@ const Skill = () => {
         {/* Skills Icon */}
         <div className='w-full md:w-[80%] grid grid-cols-4 gap-6 border p-4 overflow-x-auto'>
 
-          <div className='border h-22 w-22'>
-            ICON
-          </div>
-
-          <div className='border h-22 w-22'>
-            ICON
-          </div>
-
-          <div className='border h-22 w-22'>
-            ICON
-          </div>
-
-          <div className='border h-22 w-22'>
-            ICON
-          </div>
-
-          <div className='border h-22 w-22'>
-            ICON
-          </div>
-
-          <div className='border h-22 w-22'>
-            ICON
-          </div>
-
-          <div className='border h-22 w-22'>
-            ICON
-          </div>
-
-          <div className='border h-22 w-22'>
-            ICON
-          </div>
-
-          <div className='border h-22 w-22'>
-            ICON
-          </div>
-
-          <div className='border h-22 w-22'>
-            ICON
-          </div>
+          {
+            skill.map((data) => (
+              <div>
+                <p>{data.name}</p>
+                <p>{data.category}</p>
+              </div>
+            ))
+          }
         </div>
 
 
