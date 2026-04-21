@@ -1,11 +1,22 @@
+import storeFrontIMG from '../assets/prjImages/storeFrontIMG.png';
+import trackItIMG from '../assets/prjImages/trackItIMG.png';
+
 const project = [
 
     {
         "name": "Store Front",
-        "image": "http",
+        "image": storeFrontIMG,
         "link": "http",
         "gitRepo": "http",
-        "description": " ",
+        "desc": " ",
+    },
+
+    {
+        "name": "Store Front",
+        "image": trackItIMG,
+        "link": "http",
+        "gitRepo": "http",
+        "desc": " ",
     },
 
     {
@@ -13,7 +24,7 @@ const project = [
         "image": "http",
         "link": "http",
         "gitRepo": "http",
-        "description": " ",
+        "desc": " ",
     },
 
     {
@@ -21,15 +32,7 @@ const project = [
         "image": "http",
         "link": "http",
         "gitRepo": "http",
-        "description": " ",
-    },
-
-    {
-        "name": "Store Front",
-        "image": "http",
-        "link": "http",
-        "gitRepo": "http",
-        "description": " ",
+        "desc": " ",
     }
 ]
 
