@@ -1,14 +1,20 @@
-import React from 'react'
+import React, { useContext } from 'react'
+
+import { ThemeContext } from '../Context/ThemeProvider';
+
 
 const Hero = () => {
+
+  const { theme, toggleTheme } = useContext(ThemeContext);
+
   return (
-    <section className='h-[90vh] bg-blue-100 p-2 sm:p-4 md:p-7 lg:p-15 '>
+    <section className={`h-[90vh] p-2 sm:p-4 md:p-7 lg:p-15 ${theme === "dark" ? "bg-linear-to-r from-zinc-900 to-neutral-800  text-white" : "bg-white"}`}>
 
 
-      <div className=' flex flex-col justify-center items-center gap-8 h-full bg-green-100'>
+      <div className=' flex flex-col justify-center items-center gap-8 h-full '>
 
 
-        <h2 className='text-3xl xs:text-4xl sm:text-6xl lg:text-7xl text-center'>
+        <h2 className='text-3xl xs:text-4xl sm:text-6xl lg:text-7xl font-bold text-center'>
           Hi, I'm Deepak, a <br />
           <strong className='text-green-300'> Frontend</strong> Developer
         </h2>

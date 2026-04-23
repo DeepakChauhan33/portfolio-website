@@ -1,41 +1,65 @@
+import { span } from 'framer-motion/client'
 import React from 'react'
 
 
 
 const ProjecrCard = ({ project }) => {
     return (
-        <div className="w-[300px] rounded-2xl overflow-hidden shadow-xl relative group">
+        <div className="w-full md:w-[330px]  border rounded-sm overflow-hidden shadow-xl  border-transparent hover:border hover:border-blue-600">
 
-            {/* Background Image */}
-            <img
-                src={project.image}
-                alt="card"
-                className="w-full h-[400px] object-fill"
-            />
+            <div >
+                <img
+                    src={project.image}
+                    alt="card"
+                    className="w-full  h-[230px] object-fill  md:object-cover"
+                />
+            </div>
 
-            {/* Gradient Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
 
-            {/* Content */}
-            <div className="absolute bottom-0 p-4 text-white">
-                <h2 className="text-xl font-semibold">{project.name}</h2>
-                <p className="text-sm opacity-80 mt-1">{project.desc}</p>
+            <div className='p-3 space-y-3'>
 
-                {/* Tags */}
-                <div className="flex gap-2 mt-3">
-                    <span className="bg-white/20 px-3 py-1 rounded-full text-xs">
-                        ⭐ 4.5
-                    </span>
-                    <span className="bg-white/20 px-3 py-1 rounded-full text-xs">
-                        3 Night Stay
-                    </span>
+                <div className=''>
+                    <h2 className="text-xl font-semibold">{project.name}</h2>
+                    <p className="text-sm">{project.desc}</p>
                 </div>
 
+                {/* Description */}
+                <div className="flex mt-3">
+                    <p className='text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum earum hic, neque incidunt inventore commodi sint?</p>
+                </div>
+
+                {/* Tech Stack */}
+                <div className='space-x-3 border-y py-3  overflow-auto scroll-auto  '>
+                    {
+                        project.techStack.map((tech) => (
+                            <span id={tech.id} className='p-2 border rounded-full px-2 py-1 text-sm'>
+                                {tech.name}
+                            </span>
+                        ))
+                    }
+
+                </div>
+
+
+
                 {/* Button */}
-                <button className="mt-4 w-full bg-white text-black py-2 rounded-full font-medium hover:bg-gray-200 transition">
-                    Reserve now
-                </button>
+                <div className='flex justify-between '>
+
+                    {/* GitHub Repo Link */}
+                    <button className='text-md w-24 text-center border p-0.5 rounded-md'>
+                        Git
+                    </button>
+
+                    {/* Live Link */}
+                    <button className='text-md w-24 text-center border p-0.5 rounded-md'>
+                        Live
+                    </button>
+
+
+                </div>
+
             </div>
+
         </div>
     )
 }

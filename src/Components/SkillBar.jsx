@@ -1,14 +1,12 @@
 import React from 'react'
 
-const SkillBar = () => {
+const SkillBar = ({ setCategory }) => {
     return (
-        <div>
-            <ul className='border p-2 space-x-1.5 space-y-3'>
-                <li className='border inline md:block'>All</li>
-                <li className='border inline md:block'>Languages</li>
-                <li className='border inline md:block'>Framework & Libraries</li>
-                <li className='border inline md:block'>Tools</li>
-            </ul>
+        <div className='flex flex-row : md:flex-col border gap-y-4 p-3 '>
+            <button className='border text-start px-4 py-0.5 rounded-sm' onClick={() => setCategory("all")}>All</button>
+            <button className='border text-start px-4 py-0.5 rounded-sm' onClick={() => setCategory("library")}>Libraries</button>
+            <button className='border text-start px-4 py-0.5 rounded-sm' onClick={() => setCategory("language")}>Languages</button>
+            <button className='border text-start px-4 py-0.5 rounded-sm' onClick={() => setCategory("tool")}>Tools</button>
         </div>
     )
 }
