@@ -31,6 +31,16 @@ const Hero = () => {
         </div>
 
 
+
+        <div>
+          <span>Git</span>
+          <span>Git</span>
+          <span>Git</span>
+          <span>Git</span>
+
+        </div>
+
+
       </div>
 
     </section>
