@@ -2,9 +2,14 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div>
-      
-    </div>
+
+    <footer className='py-10 md:py-20 px-10 md:px-14 lg:px-16 bg-blue-100'>
+
+
+      <div className='border'>
+        456
+      </div>
+    </footer>
   )
 }
 

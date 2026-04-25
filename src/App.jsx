@@ -4,15 +4,20 @@ import './App.css'
 
 // COMPONENTS
 import Navbar from './Components/Navbar'
-
-
-// PAGES
-import Home from './Pages/Home'
 import BottomNavbar from './Components/BottomNavbar'
+import Footer from './Components/Footer'
+
+
+// CONTEXT
+import ThemeProvider from './Context/ThemeProvider'
+
+
+
+// SECTIONS
+import Home from './Pages/Home'
 import Skill from './Sections/Skill'
 import About from './Sections/About'
 import Projects from './Sections/Projects'
-import ThemeProvider from './Context/ThemeProvider'
 import Contact from './Sections/Contact'
 
 function App() {
@@ -28,6 +33,7 @@ function App() {
         <Skill />
         <Projects />
         <Contact />
+        <Footer />
         <div className='bolck md:hidden'>
           <BottomNavbar />
         </div>
