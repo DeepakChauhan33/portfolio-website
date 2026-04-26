@@ -18,20 +18,21 @@ const Skill = () => {
   const filterSkills = category === "all" ? skills : skills.filter(skill => skill.category === category)
 
   return (
-    <section className={`min-h-120 p-5 sm:p-6 md:p-10 lg:p-12 border-2 border-amber-500 gap-x-8 ${theme === "dark" ? "bg-gray-950 text-white" : "bg-white"}`}>
+    <section className={`min-h-120 p-5 px-4 py-10  sm:px-6 sm:py-14  md:px-8 md:py-16  lg:px-10 lg:py-20 border-amber-500 gap-x-8 ${theme === "dark" ? "bg-gray-950 text-white" : "bg-white"}`}>
 
       <h2 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl  font-black'>Skills</h2>
 
-      <div className='flex flex-col md:flex-row'>
+      <div className='flex flex-col lg:flex-row gap-y-6 gap-x-8'>
 
         {/* Option */}
-        <div className='w-full md:w-[20%] overflow-auto  '>
+        <div className='w-auto lg:w-[20%]   '>
+
           {/* Component */}
           <SkillBar setCategory={setCategory} />
         </div>
 
         {/* Skills Icon */}
-        <div className='w-full md:w-[80%] grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 border p-4 overflow-x-auto'>
+        <div className='w-full lg:w-[80%] grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 border p-4 overflow-x-auto'>
 
           {
             filterSkills.map((data) => (

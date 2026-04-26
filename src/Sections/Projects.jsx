@@ -10,16 +10,19 @@ const Projects = () => {
   const { theme, toggleTheme } = useContext(ThemeContext);
 
   return (
-    <section className={`flex  flex-col p-5 sm:p-6 md:p-10 lg:p-12   ${theme === "dark" ? "bg-stone-100 " : "bg-white"} `}>
+    <section className={`flex  flex-col px-4 py-10  sm:px-6 sm:py-14  md:px-8 md:py-16  lg:px-10 lg:py-20   ${theme === "dark" ? "bg-stone-100 " : "bg-white"} `}>
 
 
-      <div className='mb-17 space-y-4'>
-        <h2 className='text-5xl font-bold'>Projects</h2>
+      <div className='mb-8 sm:mb-11 lg:mb-14 space-y-3'>
 
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa voluptates iure itaque!</p>
+        {/* HEADING */}
+        <h2 className='text-3xl sm:text-4xl lg:text-5xl font-bold'>Projects</h2>
+
+        {/* CAPTION */}
+        <p className='text-md'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa voluptates iure itaque!</p>
       </div>
 
-      <div className='border grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-start items-center gap-6 '>
+      <div className='border grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-start items-center gap-6 p-3'>
         {
           project.map((data) => (
             <ProjecrCard project={data} />

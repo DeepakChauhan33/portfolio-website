@@ -20,7 +20,7 @@ const Contact = () => {
 
     <section className='py-20 bg-red-100'>
 
-      <div className='flex flex-col md:flex-row max-w-7xl mx-auto border p-7 gap-x-6 gap-y-15'>
+      <div className='flex flex-col md:flex-row max-w-7xl mx-auto border p-7 gap-x-6 gap-y-12'>
 
         {/* FORM */}
         <from className='w-full lg:w-1/2 p-2 border space-y-6 '>

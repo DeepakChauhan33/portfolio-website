@@ -39,7 +39,7 @@ const Navbar = () => {
 
                 <div className='flex gap-2 lg:gap-6 items-center'>
 
-                    <button className='border text-md px-4 lg:w-30 text-md font-normal py-1.5 transition-colors ease-in-out duration-300     hover:bg-neutral-200 hover:text-black '>Talk</button>
+                    <button className='border text-md px-6 sm:px-8 lg:px-10 text-md font-normal py-1 md:py-1.5 transition-colors ease-in-out duration-300     hover:bg-neutral-200 hover:text-black '>Talk</button>
 
 
                     <button className='h-fit ' onClick={() => toggleTheme(theme === "light" ? "dark" : "light")}>
