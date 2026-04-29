@@ -20,12 +20,20 @@ const Skill = () => {
   return (
     <section className={`min-h-120 p-5 px-4 py-10  sm:px-6 sm:py-14  md:px-8 md:py-16  lg:px-10 lg:py-20 border-amber-500 gap-x-8 ${theme === "dark" ? "bg-gray-950 text-white" : "bg-white"}`}>
 
-      <h2 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl  font-black'>Skills</h2>
+
+      {/* Header */}
+      <div className=' text-sm md:text-lg lg:text-xl text-start lg:text-center p-2 space-y-2 lg:space-y-4 mb-7'>
+        <h2 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl  font-black'>Skills</h2>
+
+        <p className='text-gray-300'>
+          A curated set of technologies I use to build scalable, performant web applications.
+        </p>
+      </div>
 
       <div className='flex flex-col lg:flex-row gap-y-6 gap-x-8'>
 
         {/* Option */}
-        <div className='w-auto lg:w-[20%]   '>
+        <div className='w-auto lg:w-[16%]    '>
 
           {/* Component */}
           <SkillBar setCategory={setCategory} />

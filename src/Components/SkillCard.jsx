@@ -21,7 +21,7 @@ const SkillCard = ({ skill }) => {
                 <img src={skill.image} alt={skill.name} className='h-full w-full object-contain' />
             </div>
 
-            <div>
+            <div className='p-3'>
                 <p className='text-center'>
                     {skill.name}
                 </p>
