@@ -5,23 +5,14 @@ import React from 'react'
 const SkillCard = ({ skill }) => {
     return (
         <div
-            // Styling
-            className='border shadow-md flex flex-col justify-center items-center transition-transform  hover:scale-106 duration-300 ease-in-out'
-
-        //  Animation
-        // layout
-        // initial={{ opacity: 0, scale: 0.8 }}
-        // animate={{ opacity: 1, scale: 1 }}
-        // exit={{ opacity: 0, scale: 0.8 }}
-        // transition={{ duration: 0.3 }}
-
+            className='border p-3 shadow-md flex flex-col justify-center items-center transition-transform  hover:scale-103 duration-300 ease-in-out'
 
         >
-            <div className='h-20 w-20'>
+            <div className='h-20 w-20 '>
                 <img src={skill.image} alt={skill.name} className='h-full w-full object-contain' />
             </div>
 
-            <div className='p-3'>
+            <div className=''>
                 <p className='text-center'>
                     {skill.name}
                 </p>

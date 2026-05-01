@@ -2,7 +2,7 @@ import React, { useContext, useState } from 'react'
 
 import { ThemeContext } from '../Context/ThemeProvider';
 
-import SkillBar from '../Components/SkillBar';
+import SkillCategory from '../Components/SkillCategory';
 
 import skills from '../Services/skillData'
 import SkillCard from '../Components/skillCard';
@@ -36,7 +36,7 @@ const Skill = () => {
         <div className='w-auto lg:w-[16%]    '>
 
           {/* Component */}
-          <SkillBar setCategory={setCategory} />
+          <SkillCategory setCategory={setCategory} />
         </div>
 
         {/* Skills Icon */}
