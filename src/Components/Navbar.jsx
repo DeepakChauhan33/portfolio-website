@@ -28,11 +28,11 @@ const Navbar = () => {
 
 
                 {/* Section Links  */}
-                <ul className='hidden md:flex justify-between gap-10 lg:gap-12 border border-gray-50 bg-neutral-100/25      rounded-md px-5 py-2'>
-                    <li className='text-md font-normal border-b-2 border-transparent transition-transform hover:text-green-300 cursor-pointer hover:bg-green-300/20 px-2.5 rounded-lg ease-in-out duration-300 '>Skills</li>
-                    <li className='text-md font-normal border-b-2 border-transparent transition-transform hover:text-green-300 cursor-pointer hover:bg-green-300/20 px-2.5 rounded-lg ease-in-out duration-300 '>Projects</li>
-                    <li className='text-md font-normal border-b-2 border-transparent transition-transform hover:text-green-300 cursor-pointer hover:bg-green-300/20 px-2.5 rounded-lg ease-in-out duration-300 '>About</li>
-                    <li className='text-md font-normal border-b-2 border-transparent transition-transform hover:text-green-300 cursor-pointer hover:bg-green-300/20 px-2.5 rounded-lg ease-in-out duration-300 '>Contact</li>
+                <ul className='hidden md:flex justify-between gap-10 lg:gap-12 border border-gray-50 bg-neutral-100/25 rounded-md px-5 py-2'>
+                    <li className='text-md font-normal border-b-2 border-transparent transition-all hover:text-green-400 cursor-pointer hover:bg-green-300/20 px-2.5 rounded-lg ease-in-out duration-300 '>Skills</li>
+                    <li className='text-md font-normal border-b-2 border-transparent transition-all hover:text-green-400 cursor-pointer hover:bg-green-300/20 px-2.5 rounded-lg ease-in-out duration-300 '>Projects</li>
+                    <li className='text-md font-normal border-b-2 border-transparent transition-all hover:text-green-400 cursor-pointer hover:bg-green-300/20 px-2.5 rounded-lg ease-in-out duration-300 '>About</li>
+                    <li className='text-md font-normal border-b-2 border-transparent transition-all hover:text-green-400 cursor-pointer hover:bg-green-300/20 px-2.5 rounded-lg ease-in-out duration-300 '>Contact</li>
                 </ul>
 
 
