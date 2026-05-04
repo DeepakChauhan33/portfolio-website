@@ -3,6 +3,7 @@ import React, { useContext } from 'react'
 
 // REACT ICONS
 
+import { CiMail } from "react-icons/ci";
 import { FaPhone } from "react-icons/fa6";
 import { IoLocationSharp } from "react-icons/io5";
 
@@ -74,35 +75,52 @@ const Contact = () => {
 
 
 
-          <div className='w-full lg:w-1/2 border '>
+          <div className='w-full lg:w-1/2  '>
 
             <ul className='p-3 space-y-7'>
-              <li className='flex border box-border border-transparent hover:border-green-200 p-2 py-4 rounded-lg items-center space-x-4 bg-blue-950/20'>
-                <span className='rounded-full px-2 py-1 border text-xl font-bold'>
-                  @
+
+              {/* EMAIL */}
+              <li className='group flex  px-2.5 py-4 rounded-lg items-center space-x-5 bg-blue-950/20 overflow-hidden shadow-xl
+              ring-1 ring-transparent hover:ring-gray-300/50 transition-all duration-300'>
+                <span className='rounded-sm p-1.5 bg-gray-700  text-2xl font-bold transition-transform duration-300 ease-in-out group-hover:scale-105 group-hover:shadow-xl'>
+                  <CiMail />
                 </span>
 
                 <div className='flex flex-col'>
-                  <span className='text-lg font-semibold'>EMAIL</span>
-                  <a href="" className='text-sm lg:text-lg font-normal'>deep651965@gmail.com</a>
-
+                  <span className='text-lg font-semibold text-green-400'>EMAIL</span>
+                  <a href="" className='text-md font-normal'>deep651965@gmail.com</a>
                 </div>
               </li>
 
 
-              <li className='flex border box-border border-transparent hover:border-green-200 p-2 py-4 rounded-lg items-center space-x-4 bg-blue-950/20'>
-                <span className='rounded-full p-1.5 border text-xl'>
-                  <FaPhone />
+
+              {/* NUMBER */}
+              <li className='group flex  px-2.5 py-4 rounded-lg items-center space-x-5 bg-blue-950/20 overflow-hidden shadow-xl
+              ring-1 ring-transparent hover:ring-gray-300/50 transition-all duration-300'>
+                <span className='rounded-sm p-1.5 bg-gray-700  text-2xl font-bold transition-transform duration-300 ease-in-out group-hover:scale-105 group-hover:shadow-xl'>
+                  <CiMail />
                 </span>
-                <a href="" className='text-sm lg:text-lg font-semibold'>deep651965@gmail.com</a>
+
+                <div className='flex flex-col'>
+                  <span className='text-lg font-semibold text-green-400'>EMAIL</span>
+                  <a href="" className='text-md font-normal'>deep651965@gmail.com</a>
+                </div>
               </li>
 
 
-              <li className='flex border box-border border-transparent hover:border-green-200 p-2 py-4 rounded-lg items-center space-x-4 bg-blue-950/20'>
-                <span className='rounded-full p-1.5 border text-2xl'>
-                  <IoLocationSharp />
+
+
+              {/* LOCATION */}
+              <li className='group flex  px-2.5 py-4 rounded-lg items-center space-x-5 bg-blue-950/20 overflow-hidden shadow-xl
+              ring-1 ring-transparent hover:ring-gray-300/50 transition-all duration-300'>
+                <span className='rounded-sm p-1.5 bg-gray-700  text-2xl font-bold transition-transform duration-300 ease-in-out group-hover:scale-105 group-hover:shadow-xl'>
+                  <CiMail />
                 </span>
-                <a href="" className='text-sm lg:text-lg font-semibold'>deep651965@gmail.com</a>
+
+                <div className='flex flex-col'>
+                  <span className='text-lg font-semibold text-green-400'>EMAIL</span>
+                  <a href="" className='text-md font-normal'>deep651965@gmail.com</a>
+                </div>
               </li>
 
             </ul>
