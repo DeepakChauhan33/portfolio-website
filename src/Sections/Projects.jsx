@@ -27,7 +27,7 @@ const Projects = () => {
         {/* <p className='text-md ml-2'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa voluptates iure itaque!</p> */}
       </div>
 
-      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-start items-center gap-6 p-3'>
+      <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-items-start items-center gap-6 p-3'>
         {
           project.map((data) => (
             <ProjecrCard project={data} />

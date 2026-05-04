@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 
 
 // REACT ICONS
@@ -12,13 +12,20 @@ import { SiLeetcode } from "react-icons/si";
 
 
 
+// Context
+import { ThemeContext } from '../Context/ThemeProvider';
+
 
 
 
 const Contact = () => {
+
+
+  const { theme, toggleTheme } = useContext(ThemeContext);
+
   return (
 
-    <section className='py-20 bg-red-100'>
+    <section className={` ${theme === "dark" ? "bg-linear-to-r from-zinc-900 to-neutral-800  text-white" : "bg-linear-to-b from-zinc-100 via-zinc-200 to-neutral-200"} py-20`} >
 
       <div className='flex flex-col md:flex-row max-w-7xl mx-auto border p-7 gap-x-6 gap-y-12'>
 
@@ -86,18 +93,18 @@ const Contact = () => {
           <div className='flex gap-x-6 text-2xl  lg:text-3xl p-3 justify-center '>
 
             {/* Github */}
-            <span className=' p-2 rounded-full border'>
+            <span className={`p-2 rounded-full border ${theme === "dark" ? " hover:bg-white hover:text-black" : "hover:bg-black hover:text-white"} transition-all ease-in-out duration-200`}>
               <FaGithub />
             </span>
 
             {/* LinkedIn */}
-            <span className=' p-2 rounded-full border'>
+            <span className={`p-2 rounded-full border ${theme === "dark" ? " hover:bg-white hover:text-black" : "hover:bg-black hover:text-white"} transition-all ease-in-out duration-200`}>
               <FaLinkedinIn />
             </span>
 
 
             {/* Leetcode */}
-            <span className=' p-2 rounded-full border'>
+            <span className={`p-2 rounded-full border ${theme === "dark" ? " hover:bg-white hover:text-black" : "hover:bg-black hover:text-white"} transition-all ease-in-out duration-200`}>
               <SiLeetcode />
 
             </span>

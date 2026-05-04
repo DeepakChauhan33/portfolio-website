@@ -5,13 +5,13 @@ import React from 'react'
 
 const ProjecrCard = ({ project }) => {
     return (
-        <div className="w-full md:w-[330px]  border-2 rounded-sm p-1 overflow-hidden shadow-xl  border-transparent hover:border-2 hover:border-green-300 shadow-2xl">
+        <div className="group w-full sm:max-w-[360px]  border-2 rounded-sm p-1 overflow-hidden shadow-xl  border-transparent hover:border-2 hover:border-green-300 ">
 
             <div className='rounded-sm overflow-hidden' >
                 <img
                     src={project.image}
                     alt="card"
-                    className="w-full  h-[250px] object-fill  md:object-cover"
+                    className="w-full  h-[250px] object-fill  md:object-cover transition-transform duration-500 ease-in-out group-hover:scale-103"
                 />
             </div>
 
