@@ -8,7 +8,7 @@ const Hero = () => {
   const { theme, toggleTheme } = useContext(ThemeContext);
 
   return (
-    <section className={`h-[90vh] p-2 sm:p-4 md:p-7 lg:p-15 ${theme === "dark" ? "bg-linear-to-r from-zinc-900 to-neutral-800  text-white" : "bg-linear-to-b from-zinc-100 via-zinc-200 to-neutral-200"}`}>
+    <section className={`cursor- h-[90vh] p-2 sm:p-4 md:p-7 lg:p-15 ${theme === "dark" ? "bg-linear-to-r from-zinc-900 to-neutral-800  text-white" : "bg-linear-to-b from-zinc-100 via-zinc-200 to-neutral-200"}`}>
 
 
       <div className=' flex flex-col justify-center items-center gap-y-10 h-full '>
@@ -20,7 +20,7 @@ const Hero = () => {
         </h2>
 
 
-        <p className='w-full md:w-1/2 text-center text-sm sm:text-md lg:text-xl font-normal'>
+        <p className='w-full md:w-1/2 text-center text-sm sm:text-md lg:text-xl font-medium text-gray-400'>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus inventore dolor tempora nihil, asperiores ab mollitia aliquid reprehenderit placeat dolorum?
         </p>
 

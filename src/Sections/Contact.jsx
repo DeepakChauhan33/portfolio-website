@@ -26,56 +26,24 @@ const Contact = () => {
 
   return (
 
-    <section className={` ${theme === "dark" ? "bg-linear-to-r from-zinc-900 to-neutral-800  text-white" : "bg-linear-to-b from-zinc-100 via-zinc-200 to-neutral-200"} py-20`} >
+    <section className={` ${theme === "dark" ? "bg-linear-to-r from-zinc-900 to-neutral-800  text-white" : "bg-linear-to-b from-zinc-100 via-zinc-200 to-neutral-200"} py-10 lg:py-20 px-5`} >
 
 
 
 
       <div className='flex flex-col max-w-7xl mx-auto  '>
 
-        <div className='flex justify-center items-center mb-8'>
+        <div className='flex justify-center items-center mb-4 sm:mb-6 lg:mb-8'>
 
-          <h2 className='text-3xl'>Get In Touch</h2>
+          <h2 className='text-xl sm:text-2xl md:text-3xl lg:text-4xl'>Get In Touch</h2>
 
-          <div className='border-t grow ml-4'></div>
+          <div className='hidden md:block border-t grow ml-4'></div>
         </div>
 
 
-        <div className='flex flex-col md:flex-row p-7 gap-x-6 gap-y-12'>
+        <div className='flex flex-col-reverse md:flex-row justify-between p-7 gap-x-6 gap-y-12 '>
 
-
-          {/* FORM */}
-          <from className='w-full lg:w-1/2 p-2 border space-y-6 '>
-
-            <div className='flex flex-col gap-y-1'>
-              <label className='text-lg font-normal'>Name</label>
-              <input type="text" id="name" className='h-9 border rounded-md' />
-            </div>
-
-
-            <div className='flex flex-col gap-y-1'>
-              <label className='text-lg font-normal'>E-mail</label>
-              <input type="email" id="email" className='h-9 border rounded-md' />
-            </div>
-
-
-            <div className='flex flex-col gap-y-1'>
-              <label className='text-lg font-normal'>Message</label>
-              <textarea name="message" className='h-9 border rounded-md min-h-18'></textarea>
-            </div>
-
-
-            <button className='px-4 py-2 bg-green-400 text-white rounded-lg transition-colors hover:bg-green-500 ease-in-out duration-300'>
-              Send Message
-            </button>
-
-
-          </from>
-
-
-
-
-          <div className='w-full lg:w-1/2  '>
+          <div className='w-full lg:w-[55%]  '>
 
             <ul className='p-3 space-y-7'>
 
@@ -93,7 +61,6 @@ const Contact = () => {
               </li>
 
 
-
               {/* NUMBER */}
               <li className='group flex  px-2.5 py-4 rounded-lg items-center space-x-5 bg-blue-950/20 overflow-hidden shadow-xl
               ring-1 ring-transparent hover:ring-gray-300/50 transition-all duration-300'>
@@ -106,8 +73,6 @@ const Contact = () => {
                   <a href="" className='text-md font-normal'>deep651965@gmail.com</a>
                 </div>
               </li>
-
-
 
 
               {/* LOCATION */}
@@ -127,26 +92,65 @@ const Contact = () => {
 
 
 
-            <div className='flex gap-x-6 text-2xl  lg:text-3xl p-3 justify-center '>
+            <div className='flex gap-x-6 text-2xl  lg:text-3xl p-3 justify-center mt-3'>
 
               {/* Github */}
               <span className={`p-2 rounded-full border ${theme === "dark" ? " hover:bg-white hover:text-black" : "hover:bg-black hover:text-white"} transition-all ease-in-out duration-200`}>
-                <FaGithub />
+                <FaGithub size={35} />
               </span>
 
               {/* LinkedIn */}
-              <span className={`p-2 rounded-full border ${theme === "dark" ? " hover:bg-white hover:text-black" : "hover:bg-black hover:text-white"} transition-all ease-in-out duration-200`}>
-                <FaLinkedinIn />
+              <span className={` p-2 rounded-full border ${theme === "dark" ? " hover:bg-white hover:text-black" : "hover:bg-black hover:text-white"} transition-all ease-in-out duration-200`}>
+                <FaLinkedinIn size={35} />
               </span>
 
 
               {/* Leetcode */}
-              <span className={`p-2 rounded-full border ${theme === "dark" ? " hover:bg-white hover:text-black" : "hover:bg-black hover:text-white"} transition-all ease-in-out duration-200`}>
-                <SiLeetcode />
+              <span className={` p-2 rounded-full border ${theme === "dark" ? " hover:bg-white hover:text-black" : "hover:bg-black hover:text-white"} transition-all ease-in-out duration-200`}>
+                <SiLeetcode size={35} />
 
               </span>
             </div>
           </div>
+
+
+
+
+
+          {/* FORM */}
+          <from className='w-full lg:w-[40%] px-5 py-8 border rounded-xl space-y-7 '>
+
+            <p className='text-xl font-bold'>Send a Message</p>
+
+            <div className='flex flex-col gap-y-2'>
+              <label className='text-lg font-semibold'>Name</label>
+              <input type="text" id="name" className='h-12 border p-2 bg-gray-400/10 focus:bg-gray-400/30 rounded-md focus:ring-2 focus:ring-green-100 ' />
+            </div>
+
+
+            <div className='flex flex-col gap-y-2'>
+              <label className='text-lg font-semibold'>E-mail</label>
+              <input type="email" id="email" className='h-12 border p-2 bg-gray-400/10 focus:bg-gray-400/30 rounded-md' />
+            </div>
+
+
+            <div className='flex flex-col gap-y-2'>
+              <label className='text-lg font-semibold'>Message</label>
+              <textarea name="message" className='h-12 border p-2 bg-gray-400/10 focus:bg-gray-400/30 rounded-md min-h-20 max-h-40'></textarea>
+            </div>
+
+
+            <button className='px-4 py-2 bg-green-400 text-white rounded-lg transition-colors hover:bg-green-500 ease-in-out duration-300'>
+              Send Message
+            </button>
+
+
+          </from>
+
+
+
+
+
         </div>
 
 
