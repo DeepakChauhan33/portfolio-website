@@ -18,6 +18,7 @@ import Home from './Pages/Home'
 import Skill from './Sections/Skill'
 import About from './Sections/About'
 import Projects from './Sections/Projects'
+import GitMap from './Sections/GitMap'
 import Contact from './Sections/Contact'
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
         <Home />
         <About />
         <Skill />
+        <GitMap />
         <Projects />
         <Contact />
         <Footer />

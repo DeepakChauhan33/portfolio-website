@@ -33,15 +33,15 @@ const Contact = () => {
 
       <div className='flex flex-col max-w-7xl mx-auto  '>
 
-        <div className='flex justify-center items-center mb-4 sm:mb-6 lg:mb-8'>
+        <div className='flex justify-center items-center mb-8'>
 
-          <h2 className='text-xl sm:text-2xl md:text-3xl lg:text-4xl'>Get In Touch</h2>
+          <h2 className='text-2xl sm:text-3xl md:text-4xl  font-semibold'>Get In Touch</h2>
 
           <div className='hidden md:block border-t grow ml-4'></div>
         </div>
 
 
-        <div className='flex flex-col-reverse md:flex-row justify-between p-7 gap-x-6 gap-y-12 '>
+        <div className='flex flex-col-reverse md:flex-row justify-between  md:p-7 gap-x-6 gap-y-12 '>
 
           <div className='w-full lg:w-[55%]  '>
 
@@ -65,12 +65,12 @@ const Contact = () => {
               <li className='group flex  px-2.5 py-4 rounded-lg items-center space-x-5 bg-blue-950/20 overflow-hidden shadow-xl
               ring-1 ring-transparent hover:ring-gray-300/50 transition-all duration-300'>
                 <span className='rounded-sm p-1.5 bg-gray-700  text-2xl font-bold transition-transform duration-300 ease-in-out group-hover:scale-105 group-hover:shadow-xl'>
-                  <CiMail />
+                  <FaPhone />
                 </span>
 
                 <div className='flex flex-col'>
-                  <span className='text-lg font-semibold text-green-400'>EMAIL</span>
-                  <a href="" className='text-md font-normal'>deep651965@gmail.com</a>
+                  <span className='text-lg font-semibold text-green-400'>PHONE</span>
+                  <a href="" className='text-md font-normal'> +91-7982294460</a>
                 </div>
               </li>
 
@@ -79,12 +79,12 @@ const Contact = () => {
               <li className='group flex  px-2.5 py-4 rounded-lg items-center space-x-5 bg-blue-950/20 overflow-hidden shadow-xl
               ring-1 ring-transparent hover:ring-gray-300/50 transition-all duration-300'>
                 <span className='rounded-sm p-1.5 bg-gray-700  text-2xl font-bold transition-transform duration-300 ease-in-out group-hover:scale-105 group-hover:shadow-xl'>
-                  <CiMail />
+                  <IoLocationSharp />
                 </span>
 
                 <div className='flex flex-col'>
-                  <span className='text-lg font-semibold text-green-400'>EMAIL</span>
-                  <a href="" className='text-md font-normal'>deep651965@gmail.com</a>
+                  <span className='text-lg font-semibold text-green-400'>LOCATION</span>
+                  <a href="" className='text-md font-normal'>Delhi</a>
                 </div>
               </li>
 
@@ -140,7 +140,7 @@ const Contact = () => {
             </div>
 
 
-            <button className='px-4 py-2 bg-green-400 text-white rounded-lg transition-colors hover:bg-green-500 ease-in-out duration-300'>
+            <button className='px-4 py-2 bg-green-400/60 text-white rounded-lg transition-colors hover:bg-green-500 ease-in-out duration-300'>
               Send Message
             </button>
 
