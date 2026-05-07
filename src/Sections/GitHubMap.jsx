@@ -30,7 +30,7 @@ const GitHubMap = () => {
 
             {/* GitHub Contribution Map */}
             <div
-                className={`flex justify-center items-center  border rounded-2xl  p-4 sm:p-6 overflow-x-auto shadow-lg ${theme === "dark" ? "bg-gray-800" : "bg-gray-100"
+                className={`flex justify-center items-center p-5 border rounded-2xl  sm:p-6 overflow-x-auto shadow-lg ${theme === "dark" ? "bg-gray-800" : "bg-gray-100"
                     }`}
             >
                 <GitHubCalendar
