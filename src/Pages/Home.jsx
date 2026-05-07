@@ -4,9 +4,11 @@ import React from 'react'
 // SECTION
 import Hero from '../Sections/Hero';
 
+
 const Home = () => {
     return (
         <>
+
 
             <Hero />
 

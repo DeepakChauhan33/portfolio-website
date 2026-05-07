@@ -18,7 +18,7 @@ import Home from './Pages/Home'
 import Skill from './Sections/Skill'
 import About from './Sections/About'
 import Projects from './Sections/Projects'
-import GitMap from './Sections/GitMap'
+import GitHubMap from './Sections/GitHubMap'
 import Contact from './Sections/Contact'
 
 function App() {
@@ -32,8 +32,8 @@ function App() {
         <Home />
         <About />
         <Skill />
-        <GitMap />
         <Projects />
+        <GitHubMap />
         <Contact />
         <Footer />
         <div className='bolck md:hidden'>
