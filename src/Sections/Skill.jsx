@@ -21,13 +21,19 @@ const Skill = () => {
     <section className={`min-h-120 p-5 px-4 py-10  sm:px-6 sm:py-14  md:px-8 md:py-16  lg:px-10 lg:py-20 border-amber-500 gap-x-8 ${theme === "dark" ? "bg-gray-950 text-white" : "bg-white"}`}>
 
 
-      {/* Header */}
-      <div className=' text-sm md:text-lg lg:text-xl text-start lg:text-center p-2 space-y-2 lg:space-y-4 mb-7'>
-        <h2 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl  font-black'>Skills</h2>
+      <div className='mb-8 sm:mb-11 lg:mb-14 space-y-3 '>
 
-        <p className='text-gray-300'>
-          A curated set of technologies I use to build scalable, performant web applications.
-        </p>
+        {/* HEADING WITH LINE */}
+        <div className="flex items-center">
+
+          <h2 className="text-xl sm:text-2xl lg:text-4xl font-bold text-gradient">
+            SKILLS
+          </h2>
+          <div className="flex-grow border-t ml-4"></div>
+        </div>
+
+        {/* CAPTION */}
+        {/* <p className='text-md ml-2'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa voluptates iure itaque!</p> */}
       </div>
 
       <div className='flex flex-col lg:flex-row gap-y-6 gap-x-8'>

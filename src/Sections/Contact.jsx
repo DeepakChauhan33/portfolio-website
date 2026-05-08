@@ -33,7 +33,7 @@ const Contact = () => {
 
       <div className='flex flex-col max-w-7xl mx-auto  '>
 
-        <div className='flex justify-center items-center mb-8'>
+        <div className='flex justify-center items-center mb-10 md:mb-8'>
 
           <h2 className='text-2xl sm:text-3xl md:text-4xl  font-semibold'>Get In Touch</h2>
 
@@ -45,46 +45,46 @@ const Contact = () => {
 
           <div className='w-full lg:w-[55%]  '>
 
-            <ul className='p-3 space-y-7'>
+            <ul className='p-1.5 md:p-3 space-y-7'>
 
               {/* EMAIL */}
-              <li className='group flex  px-2.5 py-4 rounded-lg items-center space-x-5 bg-blue-950/20 overflow-hidden shadow-xl
+              <li className='group flex  px-2.5 py-2 md:py-4 rounded-lg items-center space-x-5 bg-blue-950/20 overflow-hidden shadow-xl
               ring-1 ring-transparent hover:ring-gray-300/50 transition-all duration-300'>
                 <span className='rounded-sm p-1.5 bg-gray-700  text-2xl font-bold transition-transform duration-300 ease-in-out group-hover:scale-105 group-hover:shadow-xl'>
                   <CiMail />
                 </span>
 
                 <div className='flex flex-col'>
-                  <span className='text-lg font-semibold text-green-400'>EMAIL</span>
-                  <a href="" className='text-md font-normal'>deep651965@gmail.com</a>
+                  <span className='text-md md:text-lg font-semibold text-green-400'>EMAIL</span>
+                  <a href="" className='text-sm md:text-md font-normal'>deep651965@gmail.com</a>
                 </div>
               </li>
 
 
               {/* NUMBER */}
-              <li className='group flex  px-2.5 py-4 rounded-lg items-center space-x-5 bg-blue-950/20 overflow-hidden shadow-xl
+              <li className='group flex  px-2.5 py-2 md:py-4 rounded-lg items-center space-x-5 bg-blue-950/20 overflow-hidden shadow-xl
               ring-1 ring-transparent hover:ring-gray-300/50 transition-all duration-300'>
                 <span className='rounded-sm p-1.5 bg-gray-700  text-2xl font-bold transition-transform duration-300 ease-in-out group-hover:scale-105 group-hover:shadow-xl'>
                   <FaPhone />
                 </span>
 
                 <div className='flex flex-col'>
-                  <span className='text-lg font-semibold text-green-400'>PHONE</span>
-                  <a href="" className='text-md font-normal'> +91-7982294460</a>
+                  <span className='text-md md:text-lg font-semibold text-green-400'>PHONE</span>
+                  <a href="" className='text-sm md:text-md font-normal'> +91-7982294460</a>
                 </div>
               </li>
 
 
               {/* LOCATION */}
-              <li className='group flex  px-2.5 py-4 rounded-lg items-center space-x-5 bg-blue-950/20 overflow-hidden shadow-xl
+              <li className='group flex  px-2.5 py-2 md:py-4 rounded-lg items-center space-x-5 bg-blue-950/20 overflow-hidden shadow-xl
               ring-1 ring-transparent hover:ring-gray-300/50 transition-all duration-300'>
                 <span className='rounded-sm p-1.5 bg-gray-700  text-2xl font-bold transition-transform duration-300 ease-in-out group-hover:scale-105 group-hover:shadow-xl'>
                   <IoLocationSharp />
                 </span>
 
                 <div className='flex flex-col'>
-                  <span className='text-lg font-semibold text-green-400'>LOCATION</span>
-                  <a href="" className='text-md font-normal'>Delhi</a>
+                  <span className='text-md md:text-lg font-semibold text-green-400'>LOCATION</span>
+                  <a href="" className='text-sm md:text-md font-normal'>Delhi</a>
                 </div>
               </li>
 
@@ -96,18 +96,18 @@ const Contact = () => {
 
               {/* Github */}
               <span className={`p-2 rounded-full border ${theme === "dark" ? " hover:bg-white hover:text-black" : "hover:bg-black hover:text-white"} transition-all ease-in-out duration-200`}>
-                <FaGithub size={35} />
+                <FaGithub size={32} />
               </span>
 
               {/* LinkedIn */}
               <span className={` p-2 rounded-full border ${theme === "dark" ? " hover:bg-white hover:text-black" : "hover:bg-black hover:text-white"} transition-all ease-in-out duration-200`}>
-                <FaLinkedinIn size={35} />
+                <FaLinkedinIn size={32} />
               </span>
 
 
               {/* Leetcode */}
               <span className={` p-2 rounded-full border ${theme === "dark" ? " hover:bg-white hover:text-black" : "hover:bg-black hover:text-white"} transition-all ease-in-out duration-200`}>
-                <SiLeetcode size={35} />
+                <SiLeetcode size={32} />
 
               </span>
             </div>
@@ -118,30 +118,30 @@ const Contact = () => {
 
 
           {/* FORM */}
-          <from className='w-full lg:w-[40%] px-5 py-8 border rounded-xl space-y-7 '>
+          <from className='w-full lg:w-[40%] px-5 py-7 border rounded-xl space-y-4 md:space-y-7 '>
 
             <p className='text-xl font-bold'>Send a Message</p>
 
             <div className='flex flex-col gap-y-2'>
-              <label className='text-lg font-semibold'>Name</label>
+              <label className='text-sm md:text-lg font-semibold'>Name</label>
               <input type="text" id="name" className='h-12 border p-2 bg-gray-400/10 focus:bg-gray-400/30 rounded-md focus:ring-2 focus:ring-green-100 ' />
             </div>
 
 
             <div className='flex flex-col gap-y-2'>
-              <label className='text-lg font-semibold'>E-mail</label>
+              <label className='text-sm md:text-lg font-semibold'>E-mail</label>
               <input type="email" id="email" className='h-12 border p-2 bg-gray-400/10 focus:bg-gray-400/30 rounded-md' />
             </div>
 
 
             <div className='flex flex-col gap-y-2'>
-              <label className='text-lg font-semibold'>Message</label>
+              <label className='text-sm md:text-lg font-semibold'>Message</label>
               <textarea name="message" className='h-12 border p-2 bg-gray-400/10 focus:bg-gray-400/30 rounded-md min-h-20 max-h-40'></textarea>
             </div>
 
 
-            <button className='px-4 py-2 bg-green-400/60 text-white rounded-lg transition-colors hover:bg-green-500 ease-in-out duration-300'>
-              Send Message
+            <button className='mt-3 px-10 py-2 bg-green-400/60 text-white rounded-lg transition-colors hover:bg-green-500 ease-in-out duration-300'>
+              Send
             </button>
 
 

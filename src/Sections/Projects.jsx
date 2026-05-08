@@ -20,7 +20,8 @@ const Projects = () => {
           <h2 className="text-xl sm:text-2xl lg:text-4xl font-bold text-gradient">
             Projects
           </h2>
-          <div className="flex-grow border-t ml-4"></div>
+          {/* <div className="flex-grow border-t ml-4"></div> */}
+          <div className=" flex-grow border-t ml-4 h-[2px]  bg-gradient-to-r from-transparent via-purple-500 to-transparent " />
         </div>
 
         {/* CAPTION */}
