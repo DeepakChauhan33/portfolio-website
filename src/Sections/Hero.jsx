@@ -42,7 +42,7 @@ const Hero = () => {
           <div className='flex flex-col justify-center items-center gap-y-10 px-4'>
 
             <h2 className='text-3xl xs:text-4xl sm:text-6xl lg:text-7xl font-extrabold text-center'>
-              Hi, I'm Deepak, a <br /> <strong className={`text-green-300`}> Frontend</strong> Developer
+              Hi, I'm <span className='text-red-500'>De</span>epak, a <br /> <strong className={`text-green-300`}> Frontend</strong> <span className='text-red-500'>De</span>veloper
             </h2>
 
             <p className='w-full md:w-1/2 text-center text-sm sm:text-md lg:text-xl font-medium text-gray-400'>

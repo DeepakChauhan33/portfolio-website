@@ -20,12 +20,10 @@ const Projects = () => {
           <h2 className="text-xl sm:text-2xl lg:text-4xl font-bold text-gradient">
             Projects
           </h2>
-          {/* <div className="flex-grow border-t ml-4"></div> */}
-          <div className=" flex-grow border-t ml-4 h-[2px]  bg-gradient-to-r from-transparent via-purple-500 to-transparent " />
+
+          <div className="w-full flex-grow border-t ml-4 h-[3px]  bg-gradient-to-r from-transparent via-purple-500 to-transparent " />
         </div>
 
-        {/* CAPTION */}
-        {/* <p className='text-md ml-2'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa voluptates iure itaque!</p> */}
       </div>
 
       <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-items-start items-center gap-6 p-3'>
