@@ -25,7 +25,7 @@ const SkillSlider = () => {
 
                 {
                     [...skill, ...skills].map((data) => (
-                        <div className='py-2 px-4 border  flex items-center justify-center gap-2 rounded-lg hover:bg-gray-400/30'>
+                        <div className='py-2 px-4   flex items-center justify-center gap-2 rounded-lg hover:bg-gray-400/30 border border-gray-100'>
 
                             {/* Logo */}
                             <div className='h-6 w-6 inline-block  '>

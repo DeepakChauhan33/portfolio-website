@@ -1,41 +1,44 @@
-import React from 'react'
+import React, { useContext } from 'react'
 
 // import skills from '../Services/skillData'
+
+
+import { ThemeContext } from '../Context/ThemeProvider';
+
 
 
 
 import SkillSlider from '../Components/SkillSlider'
 
 const About = () => {
+
+    const { theme, toggleTheme } = useContext(ThemeContext);
+
     return (
-        <section className='py-14 md:py-18 lg:py-24 bg-sky-200'>
 
+        <section className={`pt-10 mx-auto ${theme === "dark" ? "bg-gray-900 text-white" : "bg-white"}`}>
 
-            <SkillSlider />
-
-            <div className='max-w-7xl border mx-auto px-2 md:px-4 lg:px-6'>
-
+            <div className='max-w-7xl border mx-auto px-2 md:px-4 lg:px-6 overflow-hidden'>
 
                 {/* HEADER */}
-                <div className='mb-8 sm:mb-11 lg:mb-14 space-y-3 '>
-                    {/* HEADING & LINE */}
+                <div className='max-w-7xl space-y-3'>
+
                     <div className="flex items-center">
                         <h2 className="text-xl sm:text-2xl lg:text-4xl font-bold text-gradient">
                             Projects
                         </h2>
 
-                        <div className="w-full flex-grow border-t ml-4 h-[3px]  bg-gradient-to-r from-transparent via-purple-500 to-transparent " />
+                        <div className="w-full grow border-t ml-4 h-[3px] bg-linear-to-r from-transparent via-purple-500 to-transparent" />
                     </div>
+
                 </div>
 
-
-
-
-
-
-
+                <div className="overflow-hidden">
+                    <SkillSlider />
+                </div>
 
             </div>
+
         </section>
     )
 }
