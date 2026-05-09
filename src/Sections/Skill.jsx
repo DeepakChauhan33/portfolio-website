@@ -27,7 +27,7 @@ const Skill = () => {
         <div className="flex items-center">
 
           <h2 className="text-xl sm:text-2xl lg:text-4xl font-bold text-gradient">
-            SKILLS
+            Tech Stack
           </h2>
           <div className="flex-grow border-t ml-4"></div>
         </div>
