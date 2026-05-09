@@ -11,7 +11,7 @@ const About = () => {
         <section className='py-14 md:py-18 lg:py-24 bg-sky-200'>
 
 
-
+            <SkillSlider />
 
             <div className='max-w-7xl border mx-auto px-2 md:px-4 lg:px-6'>
 
