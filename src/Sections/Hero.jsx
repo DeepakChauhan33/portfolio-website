@@ -37,15 +37,15 @@ const Hero = () => {
         />
 
         {/* Hero Section */}
-        <section className='relative z-10 min-h-screen flex items-center justify-center'>
+        <section className='relative z-10 h-[80lvh] md:min-h-screen flex items-center justify-center'>
 
-          <div className='flex flex-col justify-center items-center gap-y-10 px-4'>
+          <div className='flex flex-col justify-center items-start md:items-center gap-y-6 md:gap-y-10 px-4 '>
 
-            <h2 className='text-3xl xs:text-4xl sm:text-6xl lg:text-7xl font-extrabold text-center'>
-              Hi, I'm <span className='text-red-500'>De</span>epak, a <br /> <strong className={`text-green-300`}> Frontend</strong> <span className='text-red-500'>De</span>veloper
+            <h2 className='text-6xl xs:text-4xl sm:text-6xl lg:text-7xl font-extrabold text-start md:text-center'>
+              Hi, I'm <span className=''>De</span>epak, a <br /> <strong className={`text-green-300`}> Frontend</strong> <span className=''>De</span>veloper
             </h2>
 
-            <p className='w-full md:w-1/2 text-center text-sm sm:text-md lg:text-xl font-medium text-gray-400'>
+            <p className='w-full md:w-1/2 text-start lg:text-center text-md sm:text-md lg:text-xl font-medium text-gray-400'>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus inventore dolor tempora nihil, asperiores ab mollitia aliquid reprehenderit placeat dolorum?
             </p>
 

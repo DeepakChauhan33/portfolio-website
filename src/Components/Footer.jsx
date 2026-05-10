@@ -12,7 +12,7 @@ const Footer = () => {
       <div className="w-full h-[2px] absolute top-0 bg-gradient-to-r from-transparent via-purple-500 to-transparent " />
 
 
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between">
+      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between  ">
 
         {/* Left Section */}
         <div className="flex items-center space-x-2">
@@ -22,7 +22,7 @@ const Footer = () => {
         </div>
 
         {/* Center Section - Social Icons */}
-        <div className="flex space-x-6 mt-4 md:mt-0">
+        <div className="flex space-x-6 mt-4 ">
           <a href="https://github.com" target="_blank" rel="noopener noreferrer">
             <FaGithub className="hover:text-white transition-colors" size={22} />
           </a>
@@ -38,10 +38,15 @@ const Footer = () => {
         </div>
 
         {/* Right Section */}
-        <div className="text-sm text-gray-400 mt-4 md:mt-0 text-center md:text-right">
+        <div className="text-sm text-gray-400 mt-4  text-center lg:text-right ">
           <p>Built by Dpk</p>
           <p className="text-xs">React • Tailwind • Vercel</p>
         </div>
+      </div>
+
+      {/* Spacer */}
+      <div className='block md:hidden h-16 '>
+
       </div>
     </footer>
   )
