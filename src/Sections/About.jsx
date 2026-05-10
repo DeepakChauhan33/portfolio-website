@@ -1,8 +1,5 @@
 import React, { useContext } from 'react'
 
-// import skills from '../Services/skillData'
-
-
 import { ThemeContext } from '../Context/ThemeProvider';
 
 
@@ -16,6 +13,8 @@ const About = () => {
     const { theme, toggleTheme } = useContext(ThemeContext);
 
     return (
+
+        //  backgroundColor: '#0f0f1a',
 
         <section className={`pt-0 ${theme === "dark" ? "bg-linear-to-r from-stone-800 to-neutral-800  text-white" : "bg-linear-to-b from-zinc-100 via-zinc-200 to-neutral-200"} pb-20`}>
 
@@ -45,10 +44,10 @@ const About = () => {
 
 
 
-                <div className='flex flex-col lg:flex-row justify-between items-start gap-y-5 mt-8 border'>
+                <div className='flex flex-col lg:flex-row justify-between items-start gap-10 mt-8 border'>
 
                     {/* Text Div */}
-                    <div className='w-full lg:w-1/2  '>
+                    <div className='w-full lg:w-1/2 border '>
                         <p>
                             I am a Full Stack MERN Developer with hands-on experience in building scalable and responsive web applications. I have completed a 6-month internship at Orbiqe Technology Pvt. Ltd. as an AI & DevOps Trainee, where I worked on REST APIs, backend logic, and modern UI development.
                         </p>
@@ -67,7 +66,7 @@ const About = () => {
 
 
                     {/* Code Type Writer */}
-                    <div className='w-full lg:w-1/2 p-0 md:p-4 lg:p-6 border'>
+                    <div className=' w-full lg:w-1/2 p-0 md:p-4 lg:p-6 border'>
 
                         <CodeTypewriter />
 
