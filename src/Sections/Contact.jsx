@@ -38,14 +38,9 @@ const Contact = () => {
   const [msg, setMeg] = useState("");
 
 
-  // ERROR MESSAGE
-  const [errMsg, setErrMsg] = useState({
-    emailError: " ",
-    nameError: " "
-  })
 
 
-  const [formValid, setFormValid] = useState(false);
+
 
 
 
