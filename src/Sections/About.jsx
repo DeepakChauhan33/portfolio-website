@@ -18,7 +18,7 @@ const About = () => {
 
         //  backgroundColor: '#0f0f1a',
 
-        <section className={`pt-0 ${theme === "dark" ? "bg-linear-to-r from-stone-800 to-neutral-800  text-white" : "bg-linear-to-b from-zinc-100 via-zinc-200 to-neutral-200"} pb-20`}>
+        <section className={`pt-0 ${theme === "dark" ? " bg-[linear-gradient(to_right_top,#000000,#0a0206,#10050f,#130816,#120d1d,#0f1120,#0a1423,#051725,#071923,#0d1b20,#131c1e,#191d1d)]  text-white" : "bg-[linear-gradient(to_right_top,#fefefe,#fcfcfc,#fafbfa,#f9f9f9,#f7f7f7,#f6f6f6,#f5f5f5,#f4f4f4,#f4f4f4,#f3f3f3,#f3f3f3,#f2f2f2)]"} pb-20`}>
 
 
 
@@ -46,13 +46,13 @@ const About = () => {
 
 
 
-                <div className='flex flex-col lg:flex-row justify-between items-start gap-10 mt-8 border'>
+                <div className='flex flex-col lg:flex-row justify-between items-center gap-14 mt-8 '>
 
-                    <div className='w-full lg:w-1/2 border p-3'>
+                    <div className='w-full lg:w-1/2  p-3'>
 
 
                         {/* Text Div */}
-                        <div className=' border text-[18px]'>
+                        <div className='  text-[17px]'>
                             <p>
                                 I am a Full Stack MERN Developer with hands-on experience in building scalable and responsive web applications. I have completed a 6-month internship at Orbiqe Technology Pvt. Ltd. as an AI & DevOps Trainee, where I worked on REST APIs, backend logic, and modern UI development.
                             </p>
@@ -69,22 +69,22 @@ const About = () => {
 
 
 
-                        <div className=' mt-10 grid grid-cols-1 md:grid-cols-2 gap-4'>
+                        <div className=' mt-16 grid grid-cols-1 md:grid-cols-2 gap-4'>
 
-                            <div className='p-3 rounded-md ring hover:ring-gray-300'>
-                                <p>Location</p>
-                                <span>Palam, Delhi</span>
+                            <div className={`p-3 rounded-md ring transition-all duration-200 ease-in-out ${theme === 'dark' ? " bg-gray-950 " : "bg-linear-to-r from-zinc-50 to-stone-200"}  hover:ring-gray-300`}>
+                                <p className='text-purple-600 font-bold mb-3' >Location</p>
+                                <span className="font-normal">Palam, Delhi</span>
                             </div>
 
-                            <div className='p-3 rounded-md ring hover:ring-gray-300'>
-                                <p>E-mail</p>
-                                <span>deep651965@gmail.com</span>
+                            <div className={`p-3 rounded-md ring transition-all duration-200 ease-in-out ${theme === 'dark' ? " " : " "}  hover:ring-gray-300`}>
+                                <p className='text-purple-600 font-bold mb-3' >E-mail</p>
+                                <span className="font-normal">deep651965@gmail.com</span>
                             </div>
 
-                            <div className='p-3 rounded-md ring hover:ring-gray-300'>
-                                <p>Education</p>
-                                <div className='flex items-center gap-x-6'>
-                                    <span>BCA · CSE/IT, 2025</span>
+                            <div className={`p-3 rounded-md ring transition-all duration-200 ease-in-out ${theme === 'dark' ? " " : " "}  hover:ring-gray-300`}>
+                                <p className='text-purple-600 font-bold mb-3' >Education</p>
+                                <div className='flex items-center justify-between gap-x-6'>
+                                    <span className="font-normal">BCA · CSE/IT, 2025</span>
                                     <a href='https://drive.google.com/file/d/1O75qbOk1ErYL9JgVHC5_4I9lOb6vOXvS/view?usp=sharing' target='_blank'>
                                         <LiaExternalLinkSquareAltSolid />
                                     </a>
@@ -92,11 +92,11 @@ const About = () => {
 
                             </div>
 
-                            <div className='p-3 rounded-md ring hover:ring-gray-300'>
-                                <p>Experience</p>
+                            <div className={`p-3 rounded-md ring transition-all duration-200 ease-in-out ${theme === 'dark' ? " " : " "}  hover:ring-gray-300`}>
+                                <p className='text-purple-600 font-bold mb-3' >Experience</p>
 
-                                <div className='flex items-center gap-x-6'>
-                                    <span>Frontend Intern, Sedwis Software</span>
+                                <div className='flex items-center justify-between gap-x-6'>
+                                    <span className="font-normal">Frontend Intern, Sedwis Software</span>
                                     <a href='https://drive.google.com/file/d/1IBkwNTUmOHW_VrAa_BBpbHTugVlB9FyX/view?usp=sharing' target='_blank'>
                                         <LiaExternalLinkSquareAltSolid />
                                     </a>

@@ -36,7 +36,7 @@ const Skill = () => {
         {/* <p className='text-md ml-2'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa voluptates iure itaque!</p> */}
       </div>
 
-      <div className='flex flex-col lg:flex-row gap-y-6 gap-x-8'>
+      <div className='flex flex-col justify-around lg:flex-row gap-y-6 gap-x-8'>
 
         {/* Option */}
         <div className='w-auto lg:w-[16%]    '>
@@ -45,8 +45,10 @@ const Skill = () => {
           <SkillCategory setCategory={setCategory} />
         </div>
 
+
+
         {/* Skills Icon */}
-        <div className='w-full lg:w-[80%] grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 border p-4 overflow-x-auto'>
+        <div className='w-full lg:w-[75%] grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-8 p-4 overflow-x-auto'>
 
           {
             filterSkills.map((data) => (

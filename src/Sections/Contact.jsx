@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 
 
 // REACT ICONS
@@ -23,6 +23,31 @@ const Contact = () => {
 
 
   const { theme, toggleTheme } = useContext(ThemeContext);
+
+
+
+
+
+  // NAME
+  const [name, setName] = useState("");
+
+  // EMAIL
+  const [email, setEmail] = useState("");
+
+  //Message
+  const [msg, setMeg] = useState("");
+
+
+  // ERROR MESSAGE
+  const [errMsg, setErrMsg] = useState({
+    emailError: " ",
+    nameError: " "
+  })
+
+
+  const [formValid, setFormValid] = useState(false);
+
+
 
   return (
 

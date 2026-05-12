@@ -5,14 +5,16 @@ import React from 'react'
 
 const ProjecrCard = ({ project }) => {
     return (
-        <div className="group w-full sm:max-w-[360px]  border rounded-sm p-1 overflow-hidden shadow-xl hover:border hover:border-gray-50  ">
+        <div className="group w-full sm:max-w-[390px]  border rounded-sm p-1 overflow-hidden shadow-xl transition-all  hover:border hover:border-gray-50 hover:-translate-y-1">
 
             <div className='rounded-sm overflow-hidden' >
-                <img
-                    src={project.image}
-                    alt="card"
-                    className="w-full  h-[250px] object-fill  md:object-cover transition-transform duration-700 ease-in-out group-hover:scale-103"
-                />
+                <a href="https://storefront0.netlify.app/" target='_blank'>
+                    <img
+                        src={project.image}
+                        alt="card"
+                        className="w-full   h-[250px] object-contain  md:object-cover transition-transform duration-700 ease-in-out group-hover:scale-105"
+                    />
+                </a>
             </div>
 
 
