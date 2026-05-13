@@ -21,7 +21,8 @@ const Projects = () => {
             Projects
           </h2>
 
-          <div className="w-full flex-grow border-t ml-4 h-[3px]  bg-gradient-to-r from-transparent via-purple-500 to-transparent " />
+          <div className="flex-grow  h-[2px]  bg-linear-to-r from-transparent via-purple-500 to-transparent " />
+
         </div>
 
       </div>

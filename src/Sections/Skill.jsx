@@ -29,7 +29,10 @@ const Skill = () => {
           <h2 className="text-xl sm:text-2xl lg:text-4xl font-bold text-gradient">
             Tech Stack
           </h2>
-          <div className="flex-grow border-t ml-4"></div>
+
+          <div className="flex-grow  h-[2px]  bg-linear-to-r from-transparent via-purple-500 to-transparent " />
+
+          {/* <div className="border-t ml-4"></div> */}
         </div>
 
         {/* CAPTION */}

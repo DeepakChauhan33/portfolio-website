@@ -115,21 +115,33 @@ const Contact = () => {
             <div className='flex gap-x-6 text-2xl  lg:text-3xl p-3 justify-center mt-3'>
 
               {/* Github */}
-              <span className={`p-2 rounded-full border ${theme === "dark" ? " hover:bg-white hover:text-black" : "hover:bg-black hover:text-white"} transition-all ease-in-out duration-200`}>
+              <a
+                target='_blank'
+                href='https://github.com/DeepakChauhan33'
+                className={`p-2 rounded-full border ${theme === "dark" ? " hover:bg-white hover:text-black" : "hover:bg-black hover:text-white"} transition-all ease-in-out duration-200`}>
                 <FaGithub size={32} />
-              </span>
+              </a>
+
 
               {/* LinkedIn */}
-              <span className={` p-2 rounded-full border ${theme === "dark" ? " hover:bg-white hover:text-black" : "hover:bg-black hover:text-white"} transition-all ease-in-out duration-200`}>
+              <a
+                target='_blank'
+                href='https://www.linkedin.com/in/dpk-chauhan/'
+                className={` p-2 rounded-full border ${theme === "dark" ? " hover:bg-white hover:text-black" : "hover:bg-black hover:text-white"} transition-all ease-in-out duration-200`}>
                 <FaLinkedinIn size={32} />
-              </span>
+              </a>
+
 
 
               {/* Leetcode */}
-              <span className={` p-2 rounded-full border ${theme === "dark" ? " hover:bg-white hover:text-black" : "hover:bg-black hover:text-white"} transition-all ease-in-out duration-200`}>
+              <a
+                target='_blank'
+                href='https://leetcode.com/u/Deepak_Chauhan1204/'
+                className={` p-2 rounded-full border ${theme === "dark" ? " hover:bg-white hover:text-black" : "hover:bg-black hover:text-white"} transition-all ease-in-out duration-200`}>
                 <SiLeetcode size={32} />
 
-              </span>
+              </a>
+
             </div>
           </div>
 
