@@ -17,6 +17,11 @@ import { SiLeetcode } from "react-icons/si";
 import { ThemeContext } from '../Context/ThemeProvider';
 
 
+// Form Helper Function
+import { validateName } from '../Helper/FormValidation'
+import { validateEmail } from '../Helper/FormValidation';
+
+
 
 
 const Contact = () => {
@@ -35,10 +40,89 @@ const Contact = () => {
   const [email, setEmail] = useState("");
 
   //Message
-  const [msg, setMeg] = useState("");
+  const [msg, setMsg] = useState("");
+
+
+  const [formValid, setFormValid] = useState(false);
+
+  // ERROR MESSAGE
+  const [errMsg, setErrMsg] = useState({
+    emailError: " ",
+    nameError: " "
+  })
 
 
 
+
+
+
+
+
+  const handleChange = (e) => {
+
+    const { id, value } = e.target;
+
+    // NAME
+    if (id === "name") {
+
+      setName(value);
+
+      const error = validateName(value);
+
+      setErrMsg((prev) => ({
+        ...prev,
+        nameError: error
+      }));
+    }
+
+    // EMAIL
+    if (id === "email") {
+
+      setEmail(value);
+
+      const error = validateEmail(value);
+
+      setErrMsg((prev) => ({
+        ...prev,
+        emailError: error
+      }));
+    }
+  }
+
+
+
+
+
+
+  const handleSubmit = (e) => {
+
+    e.preventDefault();
+
+    console.log('click')
+    // Validate
+    const nameError = validateName(name);
+    const emailError = validateEmail(email);
+
+    // Set Errors
+    setErrMsg({
+      nameError,
+      emailError
+    });
+
+    // Check Errors
+    if (nameError || emailError) {
+      return;
+    }
+
+
+    setName(" ");
+    setEmail(" ");
+    setMsg(" ");
+
+    alert("Form submit successfully");
+
+
+  }
 
 
 
@@ -150,25 +234,29 @@ const Contact = () => {
 
 
           {/* FORM */}
-          <from className='w-full lg:w-[40%] px-5 py-7 border rounded-xl space-y-4 md:space-y-7 '>
+          <form
+            className='w-full lg:w-[40%] px-5 py-7 border rounded-xl space-y-4 md:space-y-7'
+            onSubmit={handleSubmit}>
 
             <p className='text-xl font-bold'>Send a Message</p>
 
             <div className='flex flex-col gap-y-2'>
-              <label className='text-sm md:text-lg font-semibold'>Name</label>
-              <input type="text" id="name" className='h-12 border p-2 bg-gray-400/10 focus:bg-gray-400/30 rounded-md focus:ring-2 focus:ring-green-100 ' />
+              <label className='text-sm md:text-lg font-semibold' htmlFor='name'>Name</label>
+              <input type="text" id="name" onChange={handleChange} value={name} className='h-12 border p-2 bg-gray-400/10 focus:bg-gray-400/30 rounded-md focus:ring-2 focus:ring-green-100 ' />
+              <p className='text-red-500 font-normal text-sm'>{errMsg.nameError}</p>
             </div>
 
 
             <div className='flex flex-col gap-y-2'>
-              <label className='text-sm md:text-lg font-semibold'>E-mail</label>
-              <input type="email" id="email" className='h-12 border p-2 bg-gray-400/10 focus:bg-gray-400/30 rounded-md' />
+              <label className='text-sm md:text-lg font-semibold' htmlFor='email'>E-mail</label>
+              <input type="email" id="email" onChange={handleChange} value={email} className='h-12 border p-2 bg-gray-400/10 focus:bg-gray-400/30 rounded-md' />
+              <p className='text-red-500 font-normal text-sm'>{errMsg.emailError}</p>
             </div>
 
 
             <div className='flex flex-col gap-y-2'>
               <label className='text-sm md:text-lg font-semibold'>Message</label>
-              <textarea name="message" className='h-12 border p-2 bg-gray-400/10 focus:bg-gray-400/30 rounded-md min-h-20 max-h-40'></textarea>
+              <textarea name="message" onChange={(e) => setMsg(e.target.value)} value={msg} className='h-12 border p-2 bg-gray-400/10 focus:bg-gray-400/30 rounded-md min-h-20 max-h-40'></textarea>
             </div>
 
 
@@ -177,7 +265,7 @@ const Contact = () => {
             </button>
 
 
-          </from>
+          </form>
 
 
 
