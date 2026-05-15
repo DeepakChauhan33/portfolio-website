@@ -4,7 +4,7 @@ import { ThemeContext } from '../Context/ThemeProvider';
 
 import SkillCategory from '../Components/SkillCategory';
 
-import skills from '../Services/skillData.jsx'
+import skills from '../Services/skillData.js'
 import SkillCard from '../Components/SkillCard.jsx';
 
 const Skill = () => {
