@@ -4,11 +4,11 @@ import javaScript from '../assets/techStackIMG/Javascript.webp';
 import sql from '../assets/techStackIMG/sql.svg';
 import bootstrap from '../assets/techStackIMG/bootstrap.svg';
 import tailwind from '../assets/techStackIMG/tailwind.png';
-import react from '../assets/techStackIMG/react.png';
+import react from '../assets/techStackIMG/React.png';
 import redux from '../assets/techStackIMG/redux.svg';
 import java from '../assets/techStackIMG/java.svg';
 import materialUI from '../assets/techStackIMG/material-ui.webp';
-import vsCode from '../assets/techStackIMG/vs_code.png';
+import vsCode from '../assets/techStackIMG/VS_code.png';
 import IntelliJ_IDEA from '../assets/techStackIMG/IntelliJ_IDEA.png';
 import gitHub from '../assets/techStackIMG/gitHub.svg'
 import git from '../assets/techStackIMG/git.svg'

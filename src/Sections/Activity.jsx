@@ -7,15 +7,15 @@ import { GitHubCalendar } from "react-github-calendar";
 // Context
 import { ThemeContext } from '../Context/ThemeProvider';
 
-const GitHubMap = () => {
+const Activity = () => {
 
 
     const { theme, toggleTheme } = useContext(ThemeContext);
 
     return (
         <section
-            id="github"
-            className={` px-4 py-10 sm:px-6 sm:py-14 md:px-8 md:py-16 lg:px-10 lg:py-18 ${theme === "dark" ? "bg-linear-to-r from-zinc-600 via-zinc-700 to-zinc-900 text-white" : "bg-white text-black"
+            id="activity"
+            className={` px-4 py-10 sm:px-6 sm:py-14 md:px-8 md:py-16 lg:px-10 lg:py-18 ${theme === "dark" ? "bg-gradient-to-br from-black via-zinc-950 to-neutral-900 text-white" : "bg-white text-black"
                 }`}
         >
             {/* Heading */}
@@ -46,4 +46,4 @@ const GitHubMap = () => {
     )
 }
 
-export default GitHubMap
+export default Activity

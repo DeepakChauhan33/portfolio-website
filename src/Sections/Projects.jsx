@@ -10,7 +10,7 @@ const Projects = () => {
   const { theme, toggleTheme } = useContext(ThemeContext);
 
   return (
-    <section id='projects' className={`flex  flex-col px-4 py-10  sm:px-6 sm:py-14  md:px-8 md:py-16  lg:px-10 lg:py-20   ${theme === "dark" ? "bg-gray-900 text-white " : "bg-white"} `}>
+    <section id='projects' className={`flex  flex-col px-4 py-10  sm:px-6 sm:py-14  md:px-8 md:py-16  lg:px-10 lg:py-20   ${theme === "dark" ? "bg-gradient-to-br from-zinc-950 via-gray-900 to-black text-white " : "bg-white"} `}>
 
 
       <div className='mb-8 sm:mb-11 lg:mb-14 space-y-3 '>

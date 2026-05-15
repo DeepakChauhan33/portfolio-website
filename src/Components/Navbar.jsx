@@ -23,13 +23,22 @@ const Navbar = () => {
 
                 {/* Logo */}
                 <div>
-                    logo
+                    <a href="#home">
+                        logo
+                    </a>
                 </div>
 
 
                 {/* Section Links  */}
-                <ul className='hidden md:flex justify-between gap-10 lg:gap-12 ring-1 ring-gray-100 hover:ring-stone-300 bg-neutral-100/25 rounded-md px-5 py-2'>
-                    <a href="">
+                <ul className='hidden md:flex justify-between gap-6 lg:gap-8 ring-1 ring-gray-100 hover:ring-stone-300 bg-neutral-100/25 rounded-md px-5 py-2'>
+
+                    <a href="#about">
+                        <li className='text-md font-normal border-b-2 border-transparent transition-all hover:text-green-400 cursor-pointer hover:bg-green-300/20 px-2.5 rounded-lg ease-in-out duration-300 '>About
+                        </li>
+                    </a>
+
+
+                    <a href="#skill">
                         <li className='text-md font-normal border-b-2 border-transparent transition-all hover:text-green-400 cursor-pointer hover:bg-green-300/20 px-2.5 rounded-lg ease-in-out duration-300 '>Skills
                         </li>
                     </a>
@@ -39,15 +48,19 @@ const Navbar = () => {
                         </li>
                     </a>
 
-                    <a href="#about">
-                        <li className='text-md font-normal border-b-2 border-transparent transition-all hover:text-green-400 cursor-pointer hover:bg-green-300/20 px-2.5 rounded-lg ease-in-out duration-300 '>About
+
+                    <a href="#activity">
+                        <li className='text-md font-normal border-b-2 border-transparent transition-all hover:text-green-400 cursor-pointer hover:bg-green-300/20 px-2.5 rounded-lg ease-in-out duration-300 '>Activity
                         </li>
                     </a>
 
-                    <a href="">
+
+                    <a href="#contact">
                         <li className='text-md font-normal border-b-2 border-transparent transition-all hover:text-green-400 cursor-pointer hover:bg-green-300/20 px-2.5 rounded-lg ease-in-out duration-300 '>Contact
                         </li>
                     </a>
+
+
 
                 </ul>
 

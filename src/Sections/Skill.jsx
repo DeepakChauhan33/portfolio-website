@@ -4,8 +4,8 @@ import { ThemeContext } from '../Context/ThemeProvider';
 
 import SkillCategory from '../Components/SkillCategory';
 
-import skills from '../Services/skillData'
-import SkillCard from '../Components/skillCard';
+import skills from '../Services/skillData.jsx'
+import SkillCard from '../Components/SkillCard.jsx';
 
 const Skill = () => {
 
@@ -18,7 +18,7 @@ const Skill = () => {
   const filterSkills = category === "all" ? skills : skills.filter(skill => skill.category === category)
 
   return (
-    <section className={`min-h-120 p-5 px-4 py-10  sm:px-6 sm:py-14  md:px-8 md:py-16  lg:px-10 lg:py-20 border-amber-500 gap-x-8 ${theme === "dark" ? "bg-gray-950 text-white" : "bg-white"}`}>
+    <section id='skill' className={`min-h-120 p-5 px-4 py-10  sm:px-6 sm:py-14  md:px-8 md:py-16  lg:px-10 lg:py-20 border-amber-500 gap-x-8 ${theme === "dark" ? "bg-gradient-to-br from-black via-slate-900 to-zinc-800 text-white" : "bg-white"}`}>
 
 
       <div className='mb-8 sm:mb-11 lg:mb-14 space-y-3 '>

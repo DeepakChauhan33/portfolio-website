@@ -130,7 +130,7 @@ const Contact = () => {
 
   return (
 
-    <section className={` ${theme === "dark" ? "bg-linear-to-r from-zinc-900 to-neutral-800  text-white" : "bg-linear-to-b from-zinc-100 via-zinc-200 to-neutral-200"} py-10 lg:py-20 px-5`} >
+    <section id='contact' className={` ${theme === "dark" ? "bg-gradient-to-b from-black via-zinc-950 to-neutral-950  text-white" : "bg-linear-to-b from-zinc-100 via-zinc-200 to-neutral-200"} py-10 lg:py-20 px-5`} >
 
 
 

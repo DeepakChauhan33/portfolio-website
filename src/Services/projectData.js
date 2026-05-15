@@ -1,12 +1,14 @@
 import storeFrontIMG from '../assets/prjImages/storeFrontIMG.png';
 import trackItIMG from '../assets/prjImages/trackItIMG.png';
+import taxHarvestingIMG from '../assets/prjImages/taxHarvestingIMG.png';
+
 
 const project = [
 
     {
         "name": "Store Front",
         "image": storeFrontIMG,
-        "link": "http",
+        "link": "https://storefront0.netlify.app/",
         "gitRepo": "http",
         "desc": " ",
         "techStack": [
@@ -17,9 +19,9 @@ const project = [
     },
 
     {
-        "name": "Store Front",
+        "name": "TrackIt",
         "image": trackItIMG,
-        "link": "http",
+        "link": "https://task-manager-kohl-nine-74.vercel.app/",
         "gitRepo": "http",
         "desc": " ",
         "techStack": [
@@ -30,9 +32,9 @@ const project = [
     },
 
     {
-        "name": "Store Front",
-        "image": storeFrontIMG,
-        "link": "http",
+        "name": "Tax Harvesting Tool",
+        "image": taxHarvestingIMG,
+        "link": "https://tax-harvesting-tool.netlify.app/",
         "gitRepo": "http",
         "desc": " ",
         "techStack": [

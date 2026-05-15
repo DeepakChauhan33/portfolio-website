@@ -16,7 +16,7 @@ const Hero = () => {
 
     <>
 
-      <div className={`relative min-h-[95vh] overflow-hidden  ${theme === "dark" ? "bg-linear-to-r from-zinc-900 to-neutral-800  text-white" : "bg-linear-to-b from-zinc-100 via-zinc-200 to-neutral-200"}`}>
+      <div className={`relative min-h-[95vh] overflow-hidden  ${theme === "dark" ? "bg-gradient-to-b from-black via-zinc-900 to-black  text-white" : "bg-linear-to-b from-zinc-100 via-zinc-200 to-neutral-200"}`}>
 
         {/* Particles */}
         <Particles
@@ -37,7 +37,7 @@ const Hero = () => {
         />
 
         {/* Hero Section */}
-        <section className='relative z-10 h-[80lvh] md:min-h-screen flex items-center justify-center'>
+        <section id='home' className='relative z-10 h-[80lvh] md:min-h-screen flex items-center justify-center'>
 
           <div className='flex flex-col justify-center items-start md:items-center gap-y-6 md:gap-y-10 px-4 '>
 
