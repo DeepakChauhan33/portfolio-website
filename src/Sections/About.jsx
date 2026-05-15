@@ -18,7 +18,7 @@ const About = () => {
 
         //  backgroundColor: '#0f0f1a',
 
-        <section className={`pt-0 ${theme === "dark" ? " bg-[linear-gradient(to_right_top,#000000,#0a0206,#10050f,#130816,#120d1d,#0f1120,#0a1423,#051725,#071923,#0d1b20,#131c1e,#191d1d)]  text-white" : "bg-[linear-gradient(to_right_top,#fefefe,#fcfcfc,#fafbfa,#f9f9f9,#f7f7f7,#f6f6f6,#f5f5f5,#f4f4f4,#f4f4f4,#f3f3f3,#f3f3f3,#f2f2f2)]"} pb-20`}>
+        <section id='about' className={` pt-0 ${theme === "dark" ? " bg-[linear-gradient(to_right_top,#000000,#0a0206,#10050f,#130816,#120d1d,#0f1120,#0a1423,#051725,#071923,#0d1b20,#131c1e,#191d1d)]  text-white" : "bg-[linear-gradient(to_right_top,#fefefe,#fcfcfc,#fafbfa,#f9f9f9,#f7f7f7,#f6f6f6,#f5f5f5,#f4f4f4,#f4f4f4,#f3f3f3,#f3f3f3,#f2f2f2)]"} pb-20`}>
 
 
 

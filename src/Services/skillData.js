@@ -1,6 +1,7 @@
 import html from '../assets/techStackIMG/html.svg';
 import css from '../assets/techStackIMG/CSS3svg.png';
 import javaScript from '../assets/techStackIMG/Javascript.webp';
+import sql from '../assets/techStackIMG/sql.svg';
 import bootstrap from '../assets/techStackIMG/bootstrap.svg';
 import tailwind from '../assets/techStackIMG/tailwind.png';
 import react from '../assets/techStackIMG/react.png';
@@ -33,6 +34,12 @@ const skill = [
         "name": "Javascript",
         "category": "language",
         "image": javaScript
+    },
+
+    {
+        "name": "SQL",
+        "category": "language",
+        "image": sql
     },
 
     {
