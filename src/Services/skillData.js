@@ -3,7 +3,7 @@ import css from '../assets/techStackIMG/CSS3svg.png';
 import javaScript from '../assets/techStackIMG/Javascript.webp';
 import sql from '../assets/techStackIMG/sql.svg';
 import bootstrap from '../assets/techStackIMG/bootstrap.svg';
-import tailwind from '../assets/techStackIMG/tailwind.png';
+import tailwind from "../assets/techStackIMG/Tailwind.png";
 import react from '../assets/techStackIMG/React.png';
 import redux from '../assets/techStackIMG/redux.svg';
 import java from '../assets/techStackIMG/java.svg';
