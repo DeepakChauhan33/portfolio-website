@@ -16,7 +16,7 @@ const Hero = () => {
 
     <>
 
-      <div className={`relative min-h-[95vh] overflow-hidden  ${theme === "dark" ? "bg-gradient-to-b from-black via-zinc-900 to-black  text-white" : "bg-linear-to-b from-zinc-100 via-zinc-200 to-neutral-200"}`}>
+      <div className={`relative min-h-[95vh] overflow-hidden  ${theme === "dark" ? "bg-linear-to-b from-black via-zinc-900 to-black  text-white" : "bg-gradient-to-br from-white via-emerald-50 to-green-100/10"}`}>
 
         {/* Particles */}
         <Particles
@@ -24,7 +24,7 @@ const Hero = () => {
           particleColors={
             theme === "dark"
               ? ["#ffffff"]
-              : ["#000000"]
+              : ["#7DB7FF"]
           }
           particleCount={200}
           particleSpread={10}
@@ -56,7 +56,7 @@ const Hero = () => {
 
               </button>
 
-              <button className='font-medium border-2 px-4 py-2 md:px-6 md:py-3 lg:px-10 transition-all hover:-translate-y-1 duration-400 ease-in-out hover:text-greenbg-green-300 hover:border-2 hover:border-green-300 hover:text-green-300 hover:scale-104 '>
+              <button className='font-medium border-2 px-4 py-2 md:px-6 md:py-3 lg:px-10 transition-all hover:-translate-y-1 duration-400 ease-in-out hover:bg-gray-100/50 hover:border-2 hover:border-green-300 hover:text-green-300 hover:scale-104 '>
                 Connect
               </button>
             </div>

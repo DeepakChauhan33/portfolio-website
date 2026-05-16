@@ -17,7 +17,7 @@ const Navbar = () => {
 
     return (
 
-        <header className={`w-full  px-10  border-b border-stone-900 transition-colors ease-in-out duration-300 ${theme === "dark" ? "bg-linear-to-r from-neutral-900 to-neutral-700 text-white" : "bg-white"}`}>
+        <header className={`w-full  px-10  border-b ${theme === "dark" ? "border-transparent" : "border-gray-300"} transition-colors ease-in-out duration-300 ${theme === "dark" ? "bg-linear-to-r from-neutral-900 to-neutral-700 text-white" : "bg-white"}`}>
 
             <nav className='h-18 max-w-8xl flex justify-between lg:justify-around items-center'>
 
@@ -30,7 +30,7 @@ const Navbar = () => {
 
 
                 {/* Section Links  */}
-                <ul className='hidden md:flex justify-between gap-6 lg:gap-8 ring-1 ring-gray-100 hover:ring-stone-300 bg-neutral-100/25 rounded-md px-5 py-2'>
+                <ul className={`hidden md:flex justify-between gap-6 lg:gap-8 ring-1 ring-stone-300 hover:ring-stone-300 bg-neutral-100/25 rounded-md px-5 py-2`}>
 
                     <a href="#about">
                         <li className='text-md font-normal border-b-2 border-transparent transition-all hover:text-green-400 cursor-pointer hover:bg-green-300/20 px-2.5 rounded-lg ease-in-out duration-300 '>About

@@ -15,7 +15,7 @@ const Activity = () => {
     return (
         <section
             id="activity"
-            className={` px-4 py-10 sm:px-6 sm:py-14 md:px-8 md:py-16 lg:px-10 lg:py-18 ${theme === "dark" ? "bg-gradient-to-br from-black via-zinc-950 to-neutral-900 text-white" : "bg-white text-black"
+            className={` px-4 py-10 sm:px-6 sm:py-14 md:px-8 md:py-16 lg:px-10 lg:py-18 ${theme === "dark" ? "bg-gradient-to-br from-black via-zinc-950 to-neutral-900 text-white" : "bg-gradient-to-br from-white/90 via-slate-100 to-gray-200 text-black"
                 }`}
         >
             {/* Heading */}
