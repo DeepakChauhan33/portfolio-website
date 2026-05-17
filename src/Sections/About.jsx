@@ -71,34 +71,40 @@ const About = () => {
 
                         <div className=' mt-16 grid grid-cols-1 md:grid-cols-2 gap-4'>
 
-                            <div className={`p-3 rounded-md ring transition-all duration-200 ease-in-out ${theme === 'dark' ? " bg-gray-950 " : "bg-linear-to-r from-zinc-50 to-stone-200"}  hover:ring-gray-300`}>
+
+                            {/* bg-white/50
+                            border border-gray-300
+                            shadow-sm
+                            hover:shadow-md */}
+
+                            <div className={`p-3 rounded-md  transition-all duration-200 ease-in-out ${theme === 'dark' ? " bg-gray-950 " : " bg-gradient-to-r from-neutral-100 via-gray-200 to-neutral-300/40 border border-gray-200 hover:bg-white hover:shadow-md "} `}>
                                 <p className='text-purple-600 font-bold mb-3' >Location</p>
                                 <span className="font-normal">Palam, Delhi</span>
                             </div>
 
-                            <div className={`p-3 rounded-md ring transition-all duration-200 ease-in-out ${theme === 'dark' ? " " : " "}  hover:ring-gray-300`}>
+                            <div className={`p-3 rounded-md  transition-all duration-200 ease-in-out ${theme === 'dark' ? " bg-gray-950 " : " bg-gradient-to-r from-neutral-100 via-gray-200 to-neutral-300/40 border border-gray-200 hover:bg-white hover:shadow-md "}`}>
                                 <p className='text-purple-600 font-bold mb-3' >E-mail</p>
                                 <span className="font-normal">deep651965@gmail.com</span>
                             </div>
 
-                            <div className={`p-3 rounded-md ring transition-all duration-200 ease-in-out ${theme === 'dark' ? " " : " "}  hover:ring-gray-300`}>
+                            <div className={`p-3 rounded-md  transition-all duration-200 ease-in-out ${theme === 'dark' ? " bg-gray-950 " : " bg-gradient-to-r from-neutral-100 via-gray-200 to-neutral-300/40 border border-gray-200 hover:bg-white hover:shadow-md "}`}>
                                 <p className='text-purple-600 font-bold mb-3' >Education</p>
                                 <div className='flex items-center justify-between gap-x-6'>
                                     <span className="font-normal">BCA · CSE/IT, 2025</span>
                                     <a href='https://drive.google.com/file/d/1O75qbOk1ErYL9JgVHC5_4I9lOb6vOXvS/view?usp=sharing' target='_blank'>
-                                        <LiaExternalLinkSquareAltSolid />
+                                        <LiaExternalLinkSquareAltSolid className='text-xl text-gray-800 transition-all hover:scale-107' />
                                     </a>
                                 </div>
 
                             </div>
 
-                            <div className={`p-3 rounded-md ring transition-all duration-200 ease-in-out ${theme === 'dark' ? " " : " "}  hover:ring-gray-300`}>
+                            <div className={`p-3 rounded-md  transition-all duration-200 ease-in-out ${theme === 'dark' ? " bg-gray-950 " : " bg-gradient-to-r from-neutral-100 via-gray-200 to-neutral-300/40 border border-gray-200 hover:bg-white hover:shadow-md "}`}>
                                 <p className='text-purple-600 font-bold mb-3' >Experience</p>
 
                                 <div className='flex items-center justify-between gap-x-6'>
                                     <span className="font-normal">Frontend Intern, Sedwis Software</span>
                                     <a href='https://drive.google.com/file/d/1IBkwNTUmOHW_VrAa_BBpbHTugVlB9FyX/view?usp=sharing' target='_blank'>
-                                        <LiaExternalLinkSquareAltSolid />
+                                        <LiaExternalLinkSquareAltSolid className='text-xl text-gray-800 transition-all hover:scale-107' />
                                     </a>
                                 </div>
 
