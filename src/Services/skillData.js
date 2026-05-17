@@ -2,6 +2,7 @@ import html from '../assets/techStackIMG/html.svg';
 import css from '../assets/techStackIMG/CSS3svg.png';
 import javaScript from '../assets/techStackIMG/Javascript.webp';
 import sql from '../assets/techStackIMG/sql.svg';
+import mongoDB from '../assets/techStackIMG/MongoDB.svg';
 import bootstrap from '../assets/techStackIMG/bootstrap.svg';
 import tailwind from "../assets/techStackIMG/Tailwind.png";
 import react from '../assets/techStackIMG/React.png';
@@ -41,6 +42,14 @@ const skill = [
         "category": "language",
         "image": sql
     },
+
+
+    {
+        "name": "mongoDB",
+        "category": "language",
+        "image": mongoDB
+    },
+
 
     {
         "name": "Bootstrap",

@@ -152,7 +152,7 @@ const Contact = () => {
             <ul className='p-1.5 md:p-3 space-y-7'>
 
               {/* EMAIL */}
-              <li className='group flex  px-2.5 py-2 md:py-4 rounded-lg items-center space-x-5 bg-blue-950/20 overflow-hidden shadow-xl
+              <li className='group flex  px-2.5 py-2 md:py-4 rounded-lg items-center space-x-5 bg-gradient-to-r from-gray-200 via-slate-100 to-gray-200 overflow-hidden shadow-xl
               ring-1 ring-transparent hover:ring-gray-300/50 transition-all duration-300'>
                 <span className='rounded-sm p-1.5 bg-gray-700  text-2xl font-bold transition-transform duration-300 ease-in-out group-hover:scale-105 group-hover:shadow-xl'>
                   <CiMail />
@@ -166,7 +166,7 @@ const Contact = () => {
 
 
               {/* NUMBER */}
-              <li className='group flex  px-2.5 py-2 md:py-4 rounded-lg items-center space-x-5 bg-blue-950/20 overflow-hidden shadow-xl
+              <li className='group flex  px-2.5 py-2 md:py-4 rounded-lg items-center space-x-5 bg-gradient-to-r from-gray-200 via-slate-100 to-gray-200 overflow-hidden shadow-xl
               ring-1 ring-transparent hover:ring-gray-300/50 transition-all duration-300'>
                 <span className='rounded-sm p-1.5 bg-gray-700  text-2xl font-bold transition-transform duration-300 ease-in-out group-hover:scale-105 group-hover:shadow-xl'>
                   <FaPhone />
@@ -180,7 +180,7 @@ const Contact = () => {
 
 
               {/* LOCATION */}
-              <li className='group flex  px-2.5 py-2 md:py-4 rounded-lg items-center space-x-5 bg-blue-950/20 overflow-hidden shadow-xl
+              <li className='group flex  px-2.5 py-2 md:py-4 rounded-lg items-center space-x-5 bg-gradient-to-r from-gray-200 via-slate-100 to-gray-200 overflow-hidden shadow-xl
               ring-1 ring-transparent hover:ring-gray-300/50 transition-all duration-300'>
                 <span className='rounded-sm p-1.5 bg-gray-700  text-2xl font-bold transition-transform duration-300 ease-in-out group-hover:scale-105 group-hover:shadow-xl'>
                   <IoLocationSharp />
