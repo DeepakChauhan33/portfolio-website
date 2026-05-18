@@ -46,7 +46,7 @@ const About = () => {
 
 
 
-                <div className='flex flex-col lg:flex-row justify-between items-center gap-14 mt-8 '>
+                <div className='flex flex-col lg:flex-row justify-between items-start gap-14 mt-8 '>
 
                     <div className='w-full lg:w-1/2  p-3'>
 
@@ -54,15 +54,15 @@ const About = () => {
                         {/* Text Div */}
                         <div className='  text-[17px]'>
                             <p>
-                                I am a Full Stack MERN Developer with hands-on experience in building scalable and responsive web applications. I have completed a 6-month internship at Orbiqe Technology Pvt. Ltd. as an AI & DevOps Trainee, where I worked on REST APIs, backend logic, and modern UI development.
+                                I’m a passionate Full Stack Developer currently pursuing full-stack development, with hands-on experience in building responsive and modern web applications. My primary expertise lies in React.js, JavaScript, Tailwind CSS, Next.js, SQL, and MongoDB, along with a strong understanding of frontend development principles and scalable UI design.
                             </p>
 
                             <p className='mt-8'>
-                                Along with my internship, I have worked as a freelance frontend developer, building 10+ real-world responsive websites, and currently leading development at WebNirmit, where I focus on AI-powered and full-stack solutions. I have built multiple production-ready applications and consistently contribute on GitHub with 500+ commits.
+                                I enjoy creating clean, user-friendly interfaces and transforming ideas into functional web applications. Alongside frontend development, I am continuously improving my backend and database skills to build complete full-stack solutions.
                             </p>
 
                             <p className='mt-8'>
-                                My core expertise includes React.js, Node.js, Express, and MongoDB, along with strong knowledge of REST API development and modern UI frameworks like Tailwind CSS. I also leverage AI tools like ChatGPT and Copilot to improve development speed and efficiency.
+                                Currently, I am focused on expanding my expertise in full-stack technologies, building production-ready applications, and learning industry best practices to grow as a professional software developer.
                             </p>
 
                         </div>
@@ -72,10 +72,6 @@ const About = () => {
                         <div className=' mt-16 grid grid-cols-1 md:grid-cols-2 gap-4'>
 
 
-                            {/* bg-white/50
-                            border border-gray-300
-                            shadow-sm
-                            hover:shadow-md */}
 
                             <div className={`p-3 rounded-md  transition-all duration-200 ease-in-out ${theme === 'dark' ? " bg-gray-950" : " bg-linear-to-r from-neutral-100 via-gray-200 to-neutral-300/40 border border-gray-200 hover:bg-white hover:shadow-md "} `}>
                                 <p className='text-purple-600 font-bold mb-3' >Location</p>
