@@ -130,65 +130,148 @@ const Contact = () => {
 
   return (
 
-    <section id='contact' className={` ${theme === "dark" ? "bg-gradient-to-b from-black via-zinc-950 to-neutral-950  text-white" : "bg-gradient-to-br from-slate-100 via-gray-200 to-slate-300"} py-10 lg:py-20 px-5`} >
+    <section
+      id='contact'
+      className={`
+          ${theme === "dark"
+          ? "bg-gradient-to-b from-black via-zinc-950 to-neutral-950 text-white"
+          : "bg-gradient-to-br from-[#f8fafc] via-[#eef2ff] to-[#e2e8f0] text-gray-900"
+        } py-10 lg:py-20 px-5`}
+    >
 
+      <div className='flex flex-col max-w-7xl mx-auto'>
 
-
-
-      <div className='flex flex-col max-w-7xl mx-auto  '>
-
+        {/* HEADING */}
         <div className='flex justify-center items-center mb-10 md:mb-8'>
 
-          <h2 className='text-2xl sm:text-3xl md:text-4xl  font-semibold'>Get In Touch</h2>
+          <h2 className='text-2xl sm:text-3xl md:text-4xl font-semibold'>
+            Get In Touch
+          </h2>
 
-          <div className='hidden md:block border-t grow ml-4'></div>
+          <div className='hidden md:block border-t grow ml-4 border-gray-400'></div>
         </div>
 
 
-        <div className='flex flex-col-reverse md:flex-row justify-between  md:p-7 gap-x-6 gap-y-12 '>
 
-          <div className='w-full lg:w-[55%]  '>
+        <div className='flex flex-col-reverse md:flex-row justify-between md:p-7 gap-x-6 gap-y-12'>
+
+          {/* LEFT SIDE */}
+          <div className='w-full lg:w-[55%]'>
 
             <ul className='p-1.5 md:p-3 space-y-7'>
 
               {/* EMAIL */}
-              <li className='group flex  px-2.5 py-2 md:py-4 rounded-lg items-center space-x-5 bg-gradient-to-r from-gray-200 via-slate-100 to-gray-200 overflow-hidden shadow-xl
-              ring-1 ring-transparent hover:ring-gray-300/50 transition-all duration-300'>
-                <span className='rounded-sm p-1.5 bg-gray-700  text-2xl font-bold transition-transform duration-300 ease-in-out group-hover:scale-105 group-hover:shadow-xl'>
+              <li className={`group flex px-4 py-4 rounded-lg items-center space-x-5 overflow-hidden
+          transition-all duration-300
+
+          ${theme === "dark"
+                  ? "bg-blue-950/30 border border-white/10 hover:border-gray-500"
+                  : "bg-white/70 border border-gray-200 shadow-lg backdrop-blur-md hover:shadow-xl"
+                }`}>
+
+                <span className={`rounded-xl p-3 text-2xl font-bold
+            transition-transform duration-300 ease-in-out
+            group-hover:scale-105
+
+            ${theme === "dark"
+                    ? "bg-gray-700 text-white"
+                    : "bg-teal-700 text-white"
+                  }`}>
                   <CiMail />
                 </span>
 
                 <div className='flex flex-col'>
-                  <span className='text-md md:text-lg font-semibold text-green-400'>EMAIL</span>
-                  <a href="" className='text-sm md:text-md font-normal'>deep651965@gmail.com</a>
+
+                  <span className={`text-md md:text-lg font-semibold
+              ${theme === "dark"
+                      ? "text-green-400"
+                      : "text-teal-600"
+                    }`}>
+                    EMAIL
+                  </span>
+
+                  <a href="" className='text-sm md:text-md font-normal'>
+                    deep651965@gmail.com
+                  </a>
+
                 </div>
               </li>
 
 
-              {/* NUMBER */}
-              <li className='group flex  px-2.5 py-2 md:py-4 rounded-lg items-center space-x-5 bg-gradient-to-r from-gray-200 via-slate-100 to-gray-200 overflow-hidden shadow-xl
-              ring-1 ring-transparent hover:ring-gray-300/50 transition-all duration-300'>
-                <span className='rounded-sm p-1.5 bg-gray-700  text-2xl font-bold transition-transform duration-300 ease-in-out group-hover:scale-105 group-hover:shadow-xl'>
+
+              {/* PHONE */}
+              <li className={`group flex px-4 py-4 rounded-lg items-center space-x-5 overflow-hidden
+          transition-all duration-300
+
+          ${theme === "dark"
+                  ? "bg-blue-950/30 border border-white/10 hover:border-gray-500"
+                  : "bg-white/70 border border-gray-200 shadow-lg backdrop-blur-md hover:shadow-xl"
+                }`}>
+
+                <span className={`rounded-xl p-3 text-2xl font-bold
+            transition-transform duration-300 ease-in-out
+            group-hover:scale-105
+
+            ${theme === "dark"
+                    ? "bg-gray-700 text-white"
+                    : "bg-teal-700 text-white"
+                  }`}>
                   <FaPhone />
                 </span>
 
                 <div className='flex flex-col'>
-                  <span className='text-md md:text-lg font-semibold text-green-400'>PHONE</span>
-                  <a href="" className='text-sm md:text-md font-normal'> +91-7982294460</a>
+
+                  <span className={`text-md md:text-lg font-semibold
+              ${theme === "dark"
+                      ? "text-green-400"
+                      : "text-teal-600"
+                    }`}>
+                    PHONE
+                  </span>
+
+                  <a href="" className='text-sm md:text-md font-normal'>
+                    +91-7982294460
+                  </a>
+
                 </div>
               </li>
 
 
+
               {/* LOCATION */}
-              <li className='group flex  px-2.5 py-2 md:py-4 rounded-lg items-center space-x-5 bg-gradient-to-r from-gray-200 via-slate-100 to-gray-200 overflow-hidden shadow-xl
-              ring-1 ring-transparent hover:ring-gray-300/50 transition-all duration-300'>
-                <span className='rounded-sm p-1.5 bg-gray-700  text-2xl font-bold transition-transform duration-300 ease-in-out group-hover:scale-105 group-hover:shadow-xl'>
+              <li className={`group flex px-4 py-4 rounded-lg items-center space-x-5 overflow-hidden
+          transition-all duration-300
+
+                  ${theme === "dark"
+                  ? "bg-blue-950/30 border border-white/10 hover:border-gray-500"
+                  : "bg-white/70 border border-gray-200 shadow-lg backdrop-blur-md hover:shadow-xl"
+                }`}>
+
+                <span className={`rounded-xl p-3 text-2xl font-bold
+            transition-transform duration-300 ease-in-out
+            group-hover:scale-105
+
+                    ${theme === "dark"
+                    ? "bg-gray-700 text-white"
+                    : "bg-teal-700 text-white"
+                  }`}>
                   <IoLocationSharp />
                 </span>
 
                 <div className='flex flex-col'>
-                  <span className='text-md md:text-lg font-semibold text-green-400'>LOCATION</span>
-                  <a href="" className='text-sm md:text-md font-normal'>Delhi</a>
+
+                  <span className={`text-md md:text-lg font-semibold
+                      ${theme === "dark"
+                      ? "text-green-400"
+                      : "text-teal-600"
+                    }`}>
+                    LOCATION
+                  </span>
+
+                  <a href="" className='text-sm md:text-md font-normal'>
+                    Delhi
+                  </a>
+
                 </div>
               </li>
 
@@ -196,85 +279,175 @@ const Contact = () => {
 
 
 
-            <div className='flex gap-x-6 text-2xl  lg:text-3xl p-3 justify-center mt-3'>
+            {/* SOCIAL LINKS */}
 
-              {/* Github */}
+
+            <div className='flex gap-x-6 text-2xl lg:text-3xl p-3 justify-center mt-3'>
+
+              {/* GITHUB */}
               <a
                 target='_blank'
                 href='https://github.com/DeepakChauhan33'
-                className={`p-2 rounded-full border ${theme === "dark" ? " hover:bg-white hover:text-black" : "hover:bg-black hover:text-white"} transition-all ease-in-out duration-200`}>
-                <FaGithub size={32} />
+                className={`p-3 rounded-full border transition-all duration-300
+
+                    ${theme === "dark"
+                    ? "border-white/20 hover:bg-white hover:text-black"
+                    : "border-gray-300 bg-white hover:bg-black hover:text-white shadow-md"
+                  }`}>
+                <FaGithub size={30} />
               </a>
 
 
-              {/* LinkedIn */}
+              {/* LINKEDIN */}
               <a
                 target='_blank'
                 href='https://www.linkedin.com/in/dpk-chauhan/'
-                className={` p-2 rounded-full border ${theme === "dark" ? " hover:bg-white hover:text-black" : "hover:bg-black hover:text-white"} transition-all ease-in-out duration-200`}>
-                <FaLinkedinIn size={32} />
+                className={`p-3 rounded-full border transition-all duration-300
+
+                  ${theme === "dark"
+                    ? "border-white/20 hover:bg-white hover:text-black"
+                    : "border-gray-300 bg-white hover:bg-black hover:text-white shadow-md"
+                  }`}>
+                <FaLinkedinIn size={30} />
               </a>
 
 
-
-              {/* Leetcode */}
+              {/* LEETCODE */}
               <a
                 target='_blank'
                 href='https://leetcode.com/u/Deepak_Chauhan1204/'
-                className={` p-2 rounded-full border ${theme === "dark" ? " hover:bg-white hover:text-black" : "hover:bg-black hover:text-white"} transition-all ease-in-out duration-200`}>
-                <SiLeetcode size={32} />
+                className={`p-3 rounded-full border transition-all duration-300
 
+                  ${theme === "dark"
+                    ? "border-white/20 hover:bg-white hover:text-black"
+                    : "border-gray-300 bg-white hover:bg-black hover:text-white shadow-md"
+                  }`}>
+                <SiLeetcode size={30} />
               </a>
 
             </div>
+
           </div>
-
-
 
 
 
           {/* FORM */}
           <form
-            className='w-full lg:w-[40%] px-5 py-7 border rounded-xl space-y-4 md:space-y-7'
-            onSubmit={handleSubmit}>
+            className={`w-full lg:w-[40%] px-5 py-7 rounded-2xl space-y-4 md:space-y-7
+
+              ${theme === "dark"
+                ? "bg-black/20 border border-white/40"
+                : "bg-white/60 border border-gray-300 shadow-xl backdrop-blur-md"
+              }`}
+            onSubmit={handleSubmit}
+          >
 
             <p className='text-xl font-bold'>Send a Message</p>
 
+
+
+            {/* NAME */}
             <div className='flex flex-col gap-y-2'>
-              <label className='text-sm md:text-lg font-semibold' htmlFor='name'>Name</label>
-              <input type="text" id="name" onChange={handleChange} value={name} className='h-12 border p-2 bg-gray-400/10 focus:bg-gray-400/30 rounded-md focus:ring-2 focus:ring-green-100 ' />
-              <p className='text-red-500 font-normal text-sm'>{errMsg.nameError}</p>
+
+              <label
+                className='text-sm md:text-lg font-semibold'
+                htmlFor='name'>
+                Name
+              </label>
+
+              <input
+                type="text"
+                id="name"
+                onChange={handleChange}
+                value={name}
+                className={`h-12 border p-2 rounded-md transition-all duration-300
+
+            ${theme === "dark"
+                    ? "bg-gray-400/10 focus:bg-gray-400/30 border-white/10 text-white"
+                    : "bg-gray-50 border-gray-300 text-gray-800 focus:bg-white"
+                  }`}
+              />
+
+              <p className='text-red-500 text-sm'>
+                {errMsg.nameError}
+              </p>
+
             </div>
 
 
+
+            {/* EMAIL */}
             <div className='flex flex-col gap-y-2'>
-              <label className='text-sm md:text-lg font-semibold' htmlFor='email'>E-mail</label>
-              <input type="email" id="email" onChange={handleChange} value={email} className='h-12 border p-2 bg-gray-400/10 focus:bg-gray-400/30 rounded-md' />
-              <p className='text-red-500 font-normal text-sm'>{errMsg.emailError}</p>
+
+              <label
+                className='text-sm md:text-lg font-semibold'
+                htmlFor='email'>
+                E-mail
+              </label>
+
+              <input
+                type="email"
+                id="email"
+                onChange={handleChange}
+                value={email}
+                className={`h-12 border p-2 rounded-md transition-all duration-300
+
+            ${theme === "dark"
+                    ? "bg-gray-400/10 focus:bg-gray-400/30 border-white/10 text-white"
+                    : "bg-gray-50 border-gray-300 text-gray-800 focus:bg-white"
+                  }`}
+              />
+
+              <p className='text-red-500 text-sm'>
+                {errMsg.emailError}
+              </p>
+
             </div>
 
 
+
+            {/* MESSAGE */}
             <div className='flex flex-col gap-y-2'>
-              <label className='text-sm md:text-lg font-semibold'>Message</label>
-              <textarea name="message" onChange={(e) => setMsg(e.target.value)} value={msg} className='h-12 border p-2 bg-gray-400/10 focus:bg-gray-400/30 rounded-md min-h-20 max-h-40'></textarea>
+
+              <label className='text-sm md:text-lg font-semibold'>
+                Message
+              </label>
+
+              <textarea
+                name="message"
+                onChange={(e) => setMsg(e.target.value)}
+                value={msg}
+                className={`border p-2 rounded-md min-h-24 max-h-40 transition-all duration-300
+
+            ${theme === "dark"
+                    ? "bg-gray-400/10 focus:bg-gray-400/30 border-white/10 text-white"
+                    : "bg-gray-50 border-gray-300 text-gray-800 focus:bg-white"
+                  }`}
+              ></textarea>
+
             </div>
 
 
-            <button className='mt-3 px-10 py-2 bg-green-400/60 text-white rounded-lg transition-colors hover:bg-green-500 ease-in-out duration-300'>
+
+            {/* BUTTON */}
+            <button
+              className={`mt-3 px-10 py-3 text-white rounded-xl
+              transition-all duration-300 hover:shadow-lg
+          
+              ${theme === "dark"
+                  ? "bg-green-400/70 hover:bg-green-400 cursor-pointer "
+                  : "bg-teal-700 text-white"
+                }
+            `}>
               Send
             </button>
 
-
           </form>
-
-
-
-
 
         </div>
 
-
       </div>
+
     </section>
   )
 }

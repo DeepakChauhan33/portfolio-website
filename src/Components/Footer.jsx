@@ -23,16 +23,14 @@ const Footer = () => {
 
         {/* Center Section - Social Icons */}
         <div className="flex  space-x-8 mt-4 ">
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+          <a target="_blank" rel="noopener noreferrer">
             <FaGithub className="hover:text-white transition-colors" size={22} />
           </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+          <a target="_blank" rel="noopener noreferrer">
             <FaLinkedin className="hover:text-white transition-colors" size={22} />
           </a>
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-            <FaTwitter className="hover:text-white transition-colors" size={22} />
-          </a>
-          <a href="mailto:someone@example.com">
+
+          <a >
             <MdEmail className="hover:text-white transition-colors" size={22} />
           </a>
         </div>
