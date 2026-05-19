@@ -10,11 +10,12 @@ const project = [
         "image": storeFrontIMG,
         "link": "https://storefront0.netlify.app/",
         "gitRepo": "http",
-        "desc": " ",
+        "desc": "Created a scalable e-commerce frontend using React and Tailwind CSS with reusable components, optimized search functionality, and global data handling through Redux Store.",
         "techStack": [
             { id: 1, name: "React" },
             { id: 2, name: "Tailwind CSS" },
-            { id: 3, name: "JavaScript" }
+            { id: 3, name: "Redux" },
+            { id: 4, name: "RTK" }
         ]
     },
 
@@ -23,11 +24,11 @@ const project = [
         "image": trackItIMG,
         "link": "https://task-manager-kohl-nine-74.vercel.app/",
         "gitRepo": "http",
-        "desc": " ",
+        "desc": "Designed and developed a responsive Task Manager application using JavaScript and Tailwind CSS with optimized user interaction handling through event delegation, category filtering, and persistent storage using Local Storage.",
         "techStack": [
-            { id: 1, name: "React" },
+            { id: 1, name: "JavaScript" },
             { id: 2, name: "Tailwind CSS" },
-            { id: 3, name: "JavaScript" }
+            { id: 3, name: "Local Storage" }
         ]
     },
 

@@ -22,12 +22,13 @@ const ProjecrCard = ({ project }) => {
 
                 <div className=''>
                     <h2 className="text-xl font-semibold">{project.name}</h2>
-                    <p className="text-sm">{project.desc}</p>
                 </div>
 
                 {/* Description */}
                 <div className="flex mt-3">
-                    <p className='text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum earum hic, neque incidunt inventore commodi sint?</p>
+                    <p className='text-sm'>
+                        {project.desc}
+                    </p>
                 </div>
 
                 {/* Tech Stack */}
