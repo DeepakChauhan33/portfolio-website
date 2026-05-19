@@ -37,7 +37,7 @@ const project = [
         "image": taxHarvestingIMG,
         "link": "https://tax-harvesting-tool.netlify.app/",
         "gitRepo": "http",
-        "desc": " ",
+        "desc": "The Tax Harvesting Dashboard is an interactive frontend application built using React.js and Tailwind CSS. It is designed to help users understand and optimize their capital gains from cryptocurrency investments.",
         "techStack": [
             { id: 1, name: "React" },
             { id: 2, name: "Tailwind CSS" },
@@ -45,18 +45,7 @@ const project = [
         ]
     },
 
-    {
-        "name": "Store Front",
-        "image": storeFrontIMG,
-        "link": "http",
-        "gitRepo": "http",
-        "desc": " ",
-        "techStack": [
-            { id: 1, name: "React" },
-            { id: 2, name: "Tailwind CSS" },
-            { id: 3, name: "JavaScript" }
-        ]
-    }
+
 ]
 
 
