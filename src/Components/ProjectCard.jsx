@@ -20,9 +20,9 @@ const ProjectCard = ({ project }) => {
         <motion.div
             whileHover={{ y: -8 }}
             transition={{ duration: 0.3 }}
-            className='group relative w-full sm:max-w-[390px] rounded-3xl overflow-hidden 
-            border border-white/10 bg-white/[0.03] backdrop-blur-xl 
-            shadow-[0_8px_30px_rgb(0,0,0,0.12)] transition-all duration-500'
+            className={`group relative w-full sm:max-w-[390px] rounded-3xl overflow-hidden 
+            border border-white/10  backdrop-blur-xl 
+            shadow-[0_8px_30px_rgb(0,0,0,0.12)] transition-all duration-500 ${theme === 'dark' ? 'bg-white/[0.03]' : ''}`}
         >
 
 
@@ -34,13 +34,13 @@ const ProjectCard = ({ project }) => {
             {/* Image */}
             <div className='relative overflow-hidden rounded-b-3xl p-2'>
 
-                <img
-                    src={project.image}
-                    alt={project.name}
-                    className='w-full h-[240px] rounded-lg object-cover transition-transform duration-700 group-hover:scale-105'
-                />
-
-                {/* <div className='absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent'></div> */}
+                <a href={project.link}>
+                    <img
+                        src={project.image}
+                        alt={project.name}
+                        className='w-full h-[240px] rounded-lg object-cover transition-transform duration-700 group-hover:scale-105'
+                    />
+                </a>
 
             </div>
 
@@ -70,9 +70,7 @@ const ProjectCard = ({ project }) => {
                             <span
                                 key={index}
                                 className={`px-3 py-1 text-xs rounded-full border 
-                                hover:border-emerald-400/40 
-                                hover:text-emerald-300
-                                ${theme === "dark" ? 'bg-white/5 text-gray-300 hover:bg-emerald-400/10 border-white/10' : 'bg-gray-200/60 border-gray-400'}
+                                ${theme === "dark" ? 'bg-white/5 text-gray-300 hover:bg-emerald-400/10 border-white/10 hover:text-emerald-300 hover:border-emerald-400/40 ' : 'bg-gray-200/60 border-gray-400 hover:text-slate-600 hover:border-gray-400 '}
                                 transition-all duration-300`}
                             >
                                 {tech.name}
