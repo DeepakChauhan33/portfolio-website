@@ -5,13 +5,13 @@ const SkillCategory = ({ setCategory }) => {
 
     return (
         <div className='flex flex-row lg:flex-col gap-x-4 gap-y-3 p-2.5 overflow-auto '>
-            <button className='border text-start px-4 py-0.5 rounded-sm shadow-md transition-all  hover:bg-green-300/30 hover:text-green-300 cursor-pointer ease-in-out duration-400 ' onClick={() => setCategory("all")}>All</button>
+            <button className='border text-start px-4 py-0.5 rounded-sm shadow-md transition-all hover:backdrop:backdrop-blur-2xl hover:border-blue-800 cursor-pointer ease-in-out duration-400 ' onClick={() => setCategory("all")}>All</button>
             <button className='border text-start px-4 py-0.5 rounded-sm shadow-md
-            transition-all  hover:bg-green-300/30 hover:text-green-300 cursor-pointer ease-in-out duration-400' onClick={() => setCategory("library")}>Libraries</button>
+            transition-all hover:backdrop:backdrop-blur-2xl hover:border-blue-800 cursor-pointer ease-in-out duration-400' onClick={() => setCategory("library")}>Libraries</button>
             <button className='border text-start px-4 py-0.5 rounded-sm shadow-md
-            transition-all  hover:bg-green-300/30 hover:text-green-300 cursor-pointer ease-in-out duration-400' onClick={() => setCategory("language")}>Languages</button>
+            transition-all hover:backdrop:backdrop-blur-2xl hover:border-blue-800 cursor-pointer ease-in-out duration-400' onClick={() => setCategory("language")}>Languages</button>
             <button className='border text-start px-4 py-0.5 rounded-sm shadow-md
-            transition-all  hover:bg-green-300/30 hover:text-green-300 cursor-pointer ease-in-out duration-400' onClick={() => setCategory("tool")}>Tools</button>
+            transition-all hover:backdrop:backdrop-blur-2xl hover:border-blue-800 cursor-pointer ease-in-out duration-400' onClick={() => setCategory("tool")}>Tools</button>
         </div>
     )
 }
