@@ -113,7 +113,7 @@ const About = () => {
 
 
                     {/* Code Type Writer */}
-                    <div className=' w-full lg:w-1/2 max-h-120 border-2 p-0 md:p-4  '>
+                    <div className=' w-full lg:w-1/2 h-95 p-0 md:p-4  '>
 
                         <CodeTypewriter />
 

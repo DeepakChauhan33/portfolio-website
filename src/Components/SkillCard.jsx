@@ -5,7 +5,7 @@ import React from 'react'
 const SkillCard = ({ skill }) => {
     return (
         <div
-            className='border p-3 shadow-md flex flex-col justify-center items-center transition-transform  hover:scale-103 duration-300 ease-in-out'
+            className='border border-gray-400 p-3 shadow-md flex flex-col justify-center items-center transition-transform  hover:scale-103 duration-300 ease-in-out'
 
         >
             <div className='h-10 w-10 md:h-16 md:w-16  '>

@@ -63,15 +63,17 @@ const Hero = () => {
                 </button>
               </a>
 
-              <button className='font-medium border-2 px-4 py-2 md:px-6 md:py-3 lg:px-10 transition-all hover:-translate-y-1 duration-400 ease-in-out hover:bg-gray-100/10 hover:border-2 hover:border-green-300 hover:text-green-300 hover:scale-104 '>
-                Connect
-              </button>
+              <a href="#contact">
+                <button className='font-medium border-2 px-4 py-2 md:px-6 md:py-3 lg:px-10 transition-all hover:-translate-y-1 duration-400 ease-in-out hover:bg-gray-100/10 hover:border-2 hover:border-green-300 hover:text-green-300 hover:scale-104 '>
+                  Connect
+                </button>
+              </a>
             </div>
 
           </div>
 
-        </section>
-      </div>
+        </section >
+      </div >
 
 
 

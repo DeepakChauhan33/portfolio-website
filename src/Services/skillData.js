@@ -13,6 +13,9 @@ import vsCode from '../assets/techStackIMG/VS_code.png';
 import IntelliJ_IDEA from '../assets/techStackIMG/IntelliJ_IDEA.png';
 import gitHub from '../assets/techStackIMG/gitHub.svg'
 import git from '../assets/techStackIMG/git.svg'
+import node_js from '../assets/techStackIMG/Node_js.png';
+import express_js from '../assets/techStackIMG/express_js.png';
+
 
 
 
@@ -79,6 +82,19 @@ const skill = [
         "name": "Java",
         "category": "language",
         "image": java
+    },
+
+    {
+        "name": "Node JS",
+        "category": "library",
+        "image": node_js
+    },
+
+
+    {
+        "name": "Express JS",
+        "category": "library",
+        "image": express_js
     },
 
 
