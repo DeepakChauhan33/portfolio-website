@@ -94,7 +94,7 @@ const Contact = () => {
 
 
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
 
     e.preventDefault();
 
@@ -115,13 +115,42 @@ const Contact = () => {
     }
 
 
-    setName(" ");
-    setEmail(" ");
-    setMsg(" ");
+    const formData = {
+      access_Key: "6a17fdbb-b129-4399-9954-4fc8f8ecf88a",
+      name,
+      email,
+      message: msg
+    };
 
-    alert("Form submit successfully");
+
+    try {
+      const response = await fetch(
+        "https://api.web3forms.com/submit",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json"
+          },
+          body: JSON.stringify(formData)
+        }
+      );
+
+      const result = await response.json();
+
+      if (result.success) {
+        alert("Message sent successfully!");
+
+        setName("");
+        setEmail("");
+        setMsg("");
+      }
+    } catch (error) {
+      console.log(error);
+      alert("Something went wrong!");
 
 
+    }
   }
 
 

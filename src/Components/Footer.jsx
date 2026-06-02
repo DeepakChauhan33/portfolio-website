@@ -21,21 +21,26 @@ const Footer = () => {
           <span>© 2026 All rights reserved.</span>
         </div>
 
-        {/* Center Section - Social Icons */}
+
         <div className="flex  space-x-8 mt-4 ">
-          <a target="_blank" rel="noopener noreferrer">
+
+          {/* GITHUB */}
+          <a href='https://github.com/DeepakChauhan33' target="_blank" >
             <FaGithub className="hover:text-white transition-colors" size={22} />
           </a>
-          <a target="_blank" rel="noopener noreferrer">
+
+          {/* LINKEDIN */}
+          <a href='https://www.linkedin.com/in/dpk-chauhan/' target="_blank" >
             <FaLinkedin className="hover:text-white transition-colors" size={22} />
           </a>
 
-          <a >
+          {/* E-MAIL */}
+          <a href="mailto:deep651965@gmail.com">
             <MdEmail className="hover:text-white transition-colors" size={22} />
           </a>
         </div>
 
-        {/* Right Section */}
+
         <div className="text-sm text-gray-400 mt-4  text-center lg:text-right ">
           <p>Built by Dpk</p>
           <p className="text-xs">React • Tailwind • Vercel</p>

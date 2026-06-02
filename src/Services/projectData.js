@@ -15,7 +15,7 @@ const project = [
             { id: 1, name: "React" },
             { id: 2, name: "Tailwind CSS" },
             { id: 3, name: "Redux" },
-            { id: 4, name: "RTK" }
+            { id: 4, name: "RTQ" }
         ]
     },
 
