@@ -17,7 +17,7 @@ const Navbar = () => {
 
     return (
 
-        <header className={`w-full  px-10  border-b ${theme === "dark" ? "border-transparent" : "border-gray-300"} transition-colors ease-in-out duration-300 ${theme === "dark" ? "bg-linear-to-r from-neutral-900 to-neutral-700 text-white" : "bg-linear-to-r from-slate-200 to-white "}`}>
+        <header className={`w-full  px-10  border-b ${theme === "dark" ? "border-transparent" : "border-gray-300"} transition-colors ease-in-out duration-300 ${theme === "dark" ? "bg-linear-to-r from-neutral-900 to-neutral-700 text-white" : "bg-linear-to-r from-slate-100 to-white "}`}>
 
             <nav className='h-18 max-w-8xl flex justify-between lg:justify-around items-center'>
 

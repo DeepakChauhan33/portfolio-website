@@ -35,8 +35,6 @@ const Skill = () => {
           {/* <div className="border-t ml-4"></div> */}
         </div>
 
-        {/* CAPTION */}
-        {/* <p className='text-md ml-2'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa voluptates iure itaque!</p> */}
       </div>
 
       <div className='flex flex-col justify-around lg:flex-row gap-y-6 gap-x-8'>

@@ -1,8 +1,14 @@
-import React, { useContext } from 'react'
 
+// HOOKS
+import React, { useContext } from 'react'
 import { ThemeContext } from '../Context/ThemeProvider';
-import { section } from 'framer-motion/client';
+
+// LIVE BACKGROUND
 import Particles from '../Components/Particles'
+
+
+// RESUME
+import resume from '../assets/Deepak_Chauhan_Resume.pdf';
 
 
 const Hero = () => {
@@ -51,10 +57,11 @@ const Hero = () => {
 
             <div className='space-x-6 p-3'>
 
-              <button className='font-medium px-4 py-2 md:px-6 md:py-3 lg:px-8 bg-green-300 text-black transition-all hover:bg-green-300 hover:-translate-y-1 duration-400 ease-in-out hover:scale-104 '>
-                Download CV
-
-              </button>
+              <a href={resume} download>
+                <button className='font-medium px-4 py-2 md:px-6 md:py-3 lg:px-8 bg-green-300 text-black transition-all hover:bg-green-300 hover:-translate-y-1 duration-400 ease-in-out hover:scale-104 '>
+                  Download CV
+                </button>
+              </a>
 
               <button className='font-medium border-2 px-4 py-2 md:px-6 md:py-3 lg:px-10 transition-all hover:-translate-y-1 duration-400 ease-in-out hover:bg-gray-100/10 hover:border-2 hover:border-green-300 hover:text-green-300 hover:scale-104 '>
                 Connect
