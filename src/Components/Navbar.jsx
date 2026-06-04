@@ -1,6 +1,10 @@
 import React, { useContext } from 'react'
 
 
+// LOGO
+import logo from '../assets/logo.png';
+
+
 import { motion, AnimatePresence } from "framer-motion";
 
 import { ThemeContext } from '../Context/ThemeProvider';
@@ -22,9 +26,9 @@ const Navbar = () => {
             <nav className='h-18 max-w-8xl flex justify-between lg:justify-around items-center'>
 
                 {/* Logo */}
-                <div>
+                <div className='h-15 w-20  flex items-center '>
                     <a href="#home">
-                        logo
+                        <img src={logo} alt="logo" className='object-cover' />
                     </a>
                 </div>
 
