@@ -47,7 +47,7 @@ const Hero = () => {
 
           <div className='flex flex-col justify-center items-start md:items-center gap-y-6 md:gap-y-10 px-4 '>
 
-            <h2 className='text-6xl xs:text-4xl sm:text-6xl lg:text-7xl text-slate-200 font-extrabold text-start md:text-center'>
+            <h2 className={`text-6xl xs:text-4xl sm:text-6xl lg:text-7xl ${theme === 'dark' ? "text-slate-200" : "text-zinc-800"} font-extrabold text-start md:text-center`}>
               Hi, I'm Deepak, a <br /> <strong className={`text-green-300`}> Frontend</strong> Developer
             </h2>
 
