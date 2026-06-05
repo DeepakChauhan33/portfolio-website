@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useState, useContext } from 'react'
 
 
 // LOGO
@@ -14,9 +14,19 @@ import { IoIosSunny } from "react-icons/io";
 import { GoMoon } from "react-icons/go";
 
 
+
+// Dialog Box
+import Dialog from '../Components/DialogBox';
+
+
+
 const Navbar = () => {
 
     const { theme, toggleTheme } = useContext(ThemeContext);
+
+
+    const [isOpen, setIsOpen] = useState(false);
+
 
 
     return (
@@ -72,7 +82,18 @@ const Navbar = () => {
 
                 <div className='flex gap-2 lg:gap-6 items-center'>
 
-                    <button className='border text-md px-6 sm:px-8 lg:px-10 text-md font-normal py-1 md:py-1.5 transition-colors ease-in-out duration-300     hover:bg-neutral-200 hover:text-black '>Talk</button>
+                    <button
+                        onClick={() => setIsOpen(true)}
+                        className="bg-white/10 backdrop-blur-md border  border-[#7EF2B1]/40 text-[#7EF2B1] px-4 py-2 rounded-md font-semibold transition-all hover:scale-103 duration-300 hover:text-white cursor-pointer"
+
+                    >
+                        Hire me
+                    </button>
+
+                    <Dialog
+                        isOpen={isOpen}
+                        closeModal={() => setIsOpen(false)}
+                    />
 
 
                     <button className='h-fit ' onClick={() => toggleTheme(theme === "light" ? "dark" : "light")}>

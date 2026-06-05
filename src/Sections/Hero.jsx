@@ -1,6 +1,6 @@
 
 // HOOKS
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import { ThemeContext } from '../Context/ThemeProvider';
 
 // LIVE BACKGROUND
@@ -11,10 +11,14 @@ import Particles from '../Components/Particles'
 import resume from '../assets/Deepak_Chauhan_Resume.pdf';
 
 
+
+
+
 const Hero = () => {
 
   const { theme, toggleTheme } = useContext(ThemeContext);
 
+  
   return (
     // <section className={`  p-2 sm:p-4 md:p-7 lg:p-15 ${theme === "dark" ? "bg-linear-to-r from-zinc-900 to-neutral-800  text-white" : "bg-linear-to-b from-zinc-100 via-zinc-200 to-neutral-200"}`}>
 
@@ -68,6 +72,9 @@ const Hero = () => {
                   Connect
                 </button>
               </a>
+
+
+
             </div>
 
           </div>
