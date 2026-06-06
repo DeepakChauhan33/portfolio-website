@@ -18,7 +18,7 @@ const Hero = () => {
 
   const { theme, toggleTheme } = useContext(ThemeContext);
 
-  
+
   return (
     // <section className={`  p-2 sm:p-4 md:p-7 lg:p-15 ${theme === "dark" ? "bg-linear-to-r from-zinc-900 to-neutral-800  text-white" : "bg-linear-to-b from-zinc-100 via-zinc-200 to-neutral-200"}`}>
 
@@ -52,7 +52,7 @@ const Hero = () => {
           <div className='flex flex-col justify-center items-start md:items-center gap-y-6 md:gap-y-10 px-4 '>
 
             <h2 className={`text-6xl xs:text-4xl sm:text-6xl lg:text-7xl ${theme === 'dark' ? "text-slate-200" : "text-zinc-800"} font-extrabold text-start md:text-center`}>
-              Hi, I'm Deepak, a <br /> <strong className={`text-green-300`}> Frontend</strong> Developer
+              Hi, I'm Deepak, a <br /> <strong className={`text-green-300`}> Full Stack</strong> Developer
             </h2>
 
             <p className='w-full md:w-1/2 text-start lg:text-center text-md sm:text-md lg:text-xl font-medium text-gray-400'>

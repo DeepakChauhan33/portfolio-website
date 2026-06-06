@@ -44,33 +44,33 @@ const Navbar = () => {
 
 
                 {/* Section Links  */}
-                <ul className={`hidden md:flex justify-between gap-6 lg:gap-8 ring-1 ring-stone-300 hover:ring-stone-300 bg-neutral-100/25 rounded-md px-5 py-2`}>
+                <ul className={`hidden md:flex justify-between gap-6 lg:gap-8 font-semibold ring-1 ring-stone-400 hover:ring-stone-300 bg-neutral-100/25 rounded-md px-5 py-2`}>
 
                     <a href="#about">
-                        <li className='text-md font-normal border-b-2 border-transparent transition-all hover:text-green-400 cursor-pointer hover:bg-green-300/20 px-2.5 rounded-lg ease-in-out duration-300 '>About
+                        <li className='text-md border-b-2 border-transparent transition-all hover:text-green-400 cursor-pointer hover:bg-green-300/20 px-2.5 rounded-lg ease-in-out duration-300 '>About
                         </li>
                     </a>
 
 
                     <a href="#skill">
-                        <li className='text-md font-normal border-b-2 border-transparent transition-all hover:text-green-400 cursor-pointer hover:bg-green-300/20 px-2.5 rounded-lg ease-in-out duration-300 '>Skills
+                        <li className='text-md border-b-2 border-transparent transition-all hover:text-green-400 cursor-pointer hover:bg-green-300/20 px-2.5 rounded-lg ease-in-out duration-300 '>Skills
                         </li>
                     </a>
 
                     <a href="#projects">
-                        <li className='text-md font-normal border-b-2 border-transparent transition-all hover:text-green-400 cursor-pointer hover:bg-green-300/20 px-2.5 rounded-lg ease-in-out duration-300 '>Projects
+                        <li className='text-md border-b-2 border-transparent transition-all hover:text-green-400 cursor-pointer hover:bg-green-300/20 px-2.5 rounded-lg ease-in-out duration-300 '>Projects
                         </li>
                     </a>
 
 
                     <a href="#activity">
-                        <li className='text-md font-normal border-b-2 border-transparent transition-all hover:text-green-400 cursor-pointer hover:bg-green-300/20 px-2.5 rounded-lg ease-in-out duration-300 '>Activity
+                        <li className='text-md border-b-2 border-transparent transition-all hover:text-green-400 cursor-pointer hover:bg-green-300/20 px-2.5 rounded-lg ease-in-out duration-300 '>Activity
                         </li>
                     </a>
 
 
                     <a href="#contact">
-                        <li className='text-md font-normal border-b-2 border-transparent transition-all hover:text-green-400 cursor-pointer hover:bg-green-300/20 px-2.5 rounded-lg ease-in-out duration-300 '>Contact
+                        <li className='text-md border-b-2 border-transparent transition-all hover:text-green-400 cursor-pointer hover:bg-green-300/20 px-2.5 rounded-lg ease-in-out duration-300 '>Contact
                         </li>
                     </a>
 
@@ -84,7 +84,7 @@ const Navbar = () => {
 
                     <button
                         onClick={() => setIsOpen(true)}
-                        className="bg-white/10 backdrop-blur-md border  border-[#7EF2B1]/40 text-[#7EF2B1] px-4 py-2 rounded-md font-semibold transition-all hover:scale-103 duration-300 hover:text-white cursor-pointer"
+                        className={`bg-white/10 backdrop-blur-md ring-1 px-4 py-2 rounded-md font-bold transition-all hover:scale-103 duration-300  cursor-pointer  ${theme === "dark" ? "text-[#7EF2B1] hover:text-gray-100 ring-[#7EF2B1]/40 " : "text-[#0c0f0d] hover:text-gray-700 ring-stone-400"}`}
 
                     >
                         Hire me
