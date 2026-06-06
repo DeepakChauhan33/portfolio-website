@@ -55,8 +55,8 @@ const Hero = () => {
               Hi, I'm Deepak, a <br /> <strong className={`text-green-300`}> Full Stack</strong> Developer
             </h2>
 
-            <p className='w-full md:w-1/2 text-start lg:text-center text-md sm:text-md lg:text-xl font-medium text-gray-400'>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus inventore dolor tempora nihil, asperiores ab mollitia aliquid reprehenderit placeat dolorum?
+            <p className='w-full md:w-1/2 text-start lg:text-center text-md sm:text-md lg:text-xl font-normal text-gray-400'>
+              Full Stack Developer focused on building modern web applications with React.js, Next.js, JavaScript, SQL, and MongoDB. Passionate about creating responsive user interfaces, writing maintainable code, and continuously learning new technologies to solve real-world challenges.
             </p>
 
             <div className='space-x-6 p-3'>
