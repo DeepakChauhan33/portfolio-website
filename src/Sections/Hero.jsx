@@ -55,7 +55,7 @@ const Hero = () => {
               Hi, I'm Deepak, a <br /> <strong className={`text-green-300`}> Full Stack</strong> Developer
             </h2>
 
-            <p className='w-full md:w-1/2 text-start lg:text-center text-md sm:text-md lg:text-xl font-normal text-gray-400'>
+            <p className={`w-full md:w-1/2 text-start lg:text-center text-md sm:text-md lg:text-xl font-normal ${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}`}>
               Full Stack Developer focused on building modern web applications with React.js, Next.js, JavaScript, SQL, and MongoDB. Passionate about creating responsive user interfaces, writing maintainable code, and continuously learning new technologies to solve real-world challenges.
             </p>
 

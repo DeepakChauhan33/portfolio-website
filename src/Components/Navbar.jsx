@@ -31,12 +31,12 @@ const Navbar = () => {
 
     return (
 
-        <header className={`w-full  px-10  border-b ${theme === "dark" ? "border-transparent" : "border-gray-300"} transition-colors ease-in-out duration-300 ${theme === "dark" ? "bg-linear-to-r from-neutral-900 to-neutral-700 text-white" : "bg-linear-to-r from-slate-100 to-white "}`}>
+        <header className={`w-full  px-4  border-b ${theme === "dark" ? "border-transparent" : "border-gray-300"} transition-colors ease-in-out duration-300 ${theme === "dark" ? "bg-linear-to-r from-neutral-900 to-neutral-700 text-white" : "bg-linear-to-r from-slate-100 to-white "}`}>
 
-            <nav className='h-18 max-w-8xl flex justify-between lg:justify-around items-center'>
+            <nav className='h-18 max-w-8xl  flex justify-between lg:justify-around items-center'>
 
                 {/* Logo */}
-                <div className='h-15 w-20  flex items-center '>
+                <div className='h-12  w-16  flex items-center '>
                     <a href="#home">
                         <img src={logo} alt="logo" className='object-cover' />
                     </a>
@@ -44,7 +44,7 @@ const Navbar = () => {
 
 
                 {/* Section Links  */}
-                <ul className={`hidden md:flex justify-between gap-6 lg:gap-8 font-semibold ring-1 ring-stone-400 hover:ring-stone-300 bg-neutral-100/25 rounded-md px-5 py-2`}>
+                <ul className={`hidden md:flex justify-between gap-6 lg:gap-8 font-semibold ring-1 ring-stone-400 hover:ring-stone-300 bg-neutral-100/25 rounded-md px-5 py-2 sticky top-6`}>
 
                     <a href="#about">
                         <li className='text-md border-b-2 border-transparent transition-all hover:text-green-400 cursor-pointer hover:bg-green-300/20 px-2.5 rounded-lg ease-in-out duration-300 '>About
@@ -80,7 +80,7 @@ const Navbar = () => {
 
 
 
-                <div className='flex gap-2 lg:gap-6 items-center'>
+                <div className='flex gap-4 lg:gap-6 items-center'>
 
                     <button
                         onClick={() => setIsOpen(true)}
@@ -105,7 +105,7 @@ const Navbar = () => {
                                 exit={{ opacity: 0, rotate: 90, scale: 0.5 }}
                                 transition={{ duration: 0.5 }}
                             >
-                                <GoMoon className='transition-transform hover:scale-130 ease-in-out duration-200' />
+                                <GoMoon className='text-gray-600/70 transition-transform hover:scale-110 ease-in-out duration-200' size={20} />
                             </motion.div>
                         ) : (
                             <motion.div
@@ -115,7 +115,7 @@ const Navbar = () => {
                                 exit={{ opacity: 0, rotate: -90, scale: 0.5 }}
                                 transition={{ duration: 0.5 }}
                             >
-                                <IoIosSunny className='text-amber-200 transition-transform hover:scale-130 ease-in-out duration-200' />
+                                <IoIosSunny className='text-amber-200 transition-transform hover:scale-110 ease-in-out duration-200' size={20} />
                             </motion.div>
                         )}
                     </button>

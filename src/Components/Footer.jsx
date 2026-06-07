@@ -41,7 +41,7 @@ const Footer = () => {
         </div>
 
 
-        <div className="text-sm text-gray-400 mt-4  text-center lg:text-right ">
+        <div className="text-sm text-gray-400 transition-all ease-in-out duration-500 hover:text-gray-200 mt-4  text-center lg:text-right ">
           <p>Built by Dpk</p>
           <p className="text-xs">React • Tailwind • Vercel</p>
         </div>
