@@ -26,7 +26,7 @@ const Hero = () => {
 
     <>
 
-      <div className={`relative min-h-[95vh] overflow-hidden  ${theme === "dark" ? "bg-linear-to-b from-black via-zinc-900 to-black  text-white" : "bg-gradient-to-br from-white via-emerald-50 to-green-100/10"}`}>
+      <div className={`relative max-h-[95vh] overflow-hidden  ${theme === "dark" ? "bg-linear-to-b from-black via-zinc-900 to-black  text-white" : "bg-gradient-to-br from-white via-emerald-50 to-green-100/10"}`}>
 
         {/* Particles */}
         <Particles

@@ -20,9 +20,9 @@ const BottomNavbar = () => {
 
 
     return (
-        <nav className='fixed bottom-6 left-1/2 transform -translate-x-1/2 z-50 rounded-full p-0.5 border border-gray-500/50'>
+        <nav className='fixed bottom-6 left-1/2 transform -translate-x-1/2 z-50 rounded-full p-0.5 border border-gray-400/60'>
 
-            <ul className={`flex gap-6 px-6 py-2 rounded-full  ${theme === "dark" ? "bg-linear-to-r from-[#0f172a]/95 via-[#1e1b4b]/95 to-[#172554]/95" : "bg-linear-to-r from-[#0f172a]/95 via-[#1e1b4b]/95 to-[#172554]/95"} backdrop-blur-md border border-white/20 shadow-lg text-white`}>
+            <ul className={`flex gap-7 px-6 py-2 rounded-full  ${theme === "dark" ? "bg-linear-to-r from-[#0f172a]/95 via-[#1e1b4b]/95 to-[#172554]/95" : "bg-linear-to-r from-[#0f172a]/95 via-[#1e1b4b]/95 to-[#172554]/95"} backdrop-blur-md border border-white/30 shadow-lg text-white`}>
 
 
                 <a href="#home">
