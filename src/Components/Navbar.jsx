@@ -44,7 +44,7 @@ const Navbar = () => {
 
 
                 {/* Section Links  */}
-                <ul className={`hidden md:flex justify-between gap-6 lg:gap-8 font-semibold ring-1 ring-stone-400 hover:ring-stone-300 bg-neutral-100/25 rounded-md px-5 py-2 sticky top-6`}>
+                <ul className={`hidden md:flex justify-between gap-6 lg:gap-8 font-semibold ring-1 ring-stone-400 hover:ring-stone-300 bg-neutral-100/25 rounded-md px-5 py-2 `}>
 
                     <a href="#about">
                         <li className='text-md border-b-2 border-transparent transition-all hover:text-green-400 cursor-pointer hover:bg-green-300/20 px-2.5 rounded-lg ease-in-out duration-300 '>About

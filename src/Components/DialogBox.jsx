@@ -1,7 +1,12 @@
 import { Dialog, DialogPanel, DialogTitle } from "@headlessui/react";
 
 export default function Modal({ isOpen, closeModal }) {
+
+
+
+
   return (
+
     <Dialog
       open={isOpen}
       onClose={closeModal}

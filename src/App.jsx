@@ -21,6 +21,10 @@ import Projects from './Sections/Projects'
 import Activity from './Sections/Activity'
 import Contact from './Sections/Contact'
 
+
+// Animation Components
+import Reveal from './Components/Reveal'
+
 function App() {
 
 
@@ -29,17 +33,48 @@ function App() {
 
       <ThemeProvider>
         <Navbar />
-        <Home />
-        <About />
-        <Skill />
-        <Projects />
-        <Activity />
-        <Contact />
+
+        <div className='relative'>
+
+          {/* Home Section */}
+          <Home />
+
+
+
+          {/* About Section */}
+          <About />
+
+
+
+          {/* Skill Section */}
+          <Skill />
+
+
+
+          {/* Project Section */}
+          <Projects />
+
+
+
+          {/* Activity Section */}
+          <Activity />
+
+
+
+          {/* Contact Section */}
+          <Contact />
+
+
+        </div>
+
         <Footer />
+
+        {/* Bottom Navbar */}
         <div className='bolck md:hidden'>
           <BottomNavbar />
         </div>
-      </ThemeProvider>
+
+      </ThemeProvider >
     </>
   )
 }

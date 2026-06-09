@@ -5,7 +5,7 @@ import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism';
 const fullCode = `const developer = {
   name: 'Deepak Chauhan',
   role: 'Full Stack Developer',
-  skills: ['React', 'JS', 'AI'],
+  skills: ['React', 'JS', 'Express JS, 'AI'],
   available: true
 }`;
 
