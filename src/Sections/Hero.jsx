@@ -3,6 +3,10 @@
 import React, { useContext, useState } from 'react'
 import { ThemeContext } from '../Context/ThemeProvider';
 
+
+// Framer Motion
+import { motion, useScroll, useTransform } from "framer-motion";
+
 // LIVE BACKGROUND
 import Particles from '../Components/Particles'
 
@@ -18,15 +22,33 @@ const Hero = () => {
 
   const { theme, toggleTheme } = useContext(ThemeContext);
 
+  const { scrollY } = useScroll();
+
+
+  
+
+  const y = useTransform(
+    scrollY,
+    [0, 200, 400, 800],
+    [0, -100, -100, -300]
+  );
+
+  const scale = useTransform(
+    scrollY,
+    [0, 200, 400, 800],
+    [1, 1.1, 1.1, 1.2]
+  );
+
+
+
+
 
   return (
-    // <section className={`  p-2 sm:p-4 md:p-7 lg:p-15 ${theme === "dark" ? "bg-linear-to-r from-zinc-900 to-neutral-800  text-white" : "bg-linear-to-b from-zinc-100 via-zinc-200 to-neutral-200"}`}>
-
-
 
     <>
 
-      <div className={`relative max-h-[95vh] overflow-hidden  ${theme === "dark" ? "bg-linear-to-b from-black via-zinc-900 to-black  text-white" : "bg-gradient-to-br from-white via-emerald-50 to-green-100/10"}`}>
+      <div
+        className={`relative max-h-[95vh] overflow-hidden  ${theme === "dark" ? "bg-linear-to-b from-black via-zinc-900 to-black  text-white" : "bg-gradient-to-br from-white via-emerald-50 to-green-100/10"}`}>
 
         {/* Particles */}
         <Particles
@@ -47,15 +69,21 @@ const Hero = () => {
         />
 
         {/* Hero Section */}
-        <section id='home' className='relative z-10 h-[80lvh] md:min-h-screen flex items-center justify-center'>
+        <section
+          id='home'
+          className='relative z-10 h-[80lvh] md:min-h-screen flex items-center justify-center'>
 
-          <div className='flex flex-col justify-center items-start md:items-center gap-y-6 md:gap-y-10 px-4 '>
+          <motion.div
+            style={{ y, scale }}
+            className='flex flex-col justify-center items-start md:items-center gap-y-6 md:gap-y-10 px-4 '>
 
-            <h2 className={`text-6xl xs:text-4xl sm:text-6xl lg:text-7xl ${theme === 'dark' ? "text-slate-200" : "text-zinc-800"} font-extrabold text-start md:text-center`}>
+            <h2
+              className={`text-6xl xs:text-4xl sm:text-6xl lg:text-7xl ${theme === 'dark' ? "text-slate-200" : "text-zinc-800"} font-extrabold text-start md:text-center`}>
               Hi, I'm Deepak, a <br /> <strong className={`text-green-300`}> Full Stack</strong> Developer
             </h2>
 
-            <p className={`w-full md:w-1/2 text-start lg:text-center text-md sm:text-md lg:text-xl font-normal ${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}`}>
+            <p
+              className={`w-full md:w-1/2 text-start lg:text-center text-md sm:text-md lg:text-xl font-normal ${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}`}>
               Full Stack Developer focused on building modern web applications with React.js, Next.js, JavaScript, SQL, and MongoDB. Passionate about creating responsive user interfaces, writing maintainable code, and continuously learning new technologies to solve real-world challenges.
             </p>
 
@@ -77,7 +105,7 @@ const Hero = () => {
 
             </div>
 
-          </div>
+          </motion.div>
 
         </section >
       </div >

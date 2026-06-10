@@ -37,32 +37,58 @@ function App() {
         <div className='relative'>
 
           {/* Home Section */}
-          <Home />
+          {/* <Home /> */}
 
 
 
           {/* About Section */}
-          <About />
+          {/* <About /> */}
 
 
 
           {/* Skill Section */}
-          <Skill />
+          {/* <Skill /> */}
 
 
 
           {/* Project Section */}
-          <Projects />
+          {/* <Projects /> */}
 
 
 
           {/* Activity Section */}
-          <Activity />
+          {/* <Activity /> */}
 
 
 
           {/* Contact Section */}
-          <Contact />
+          {/* <Contact /> */}
+
+
+          <Reveal>
+            <Home />
+          </Reveal>
+
+
+          <Reveal>
+            <About />
+          </Reveal>
+
+          <Reveal>
+            <Skill />
+          </Reveal>
+
+          <Reveal>
+            <Projects />
+          </Reveal>
+
+          <Reveal>
+            <Activity />
+          </Reveal>
+
+          <Reveal>
+            <Contact />
+          </Reveal>
 
 
         </div>
