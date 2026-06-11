@@ -1,7 +1,11 @@
 import React, { useContext } from 'react'
 
-// React Icons
+
+// Framer Motion Library
 import { motion } from 'framer-motion'
+
+
+// React Icons
 import { FaArrowRight } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
 
@@ -18,8 +22,10 @@ const ProjectCard = ({ project }) => {
     return (
 
         <motion.div
+
             whileHover={{ y: -8 }}
             transition={{ duration: 0.3 }}
+
             className={`group relative w-full sm:max-w-[390px] rounded-3xl overflow-hidden 
             border border-white/10  backdrop-blur-xl 
             shadow-[0_8px_30px_rgb(0,0,0,0.12)] transition-all duration-500 ${theme === 'dark' ? 'bg-white/[0.03]' : ''}`}

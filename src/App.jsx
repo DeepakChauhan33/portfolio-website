@@ -1,6 +1,5 @@
 import { useState } from 'react'
 
-import './App.css'
 
 // COMPONENTS
 import Navbar from './Components/Navbar'
@@ -23,7 +22,7 @@ import Contact from './Sections/Contact'
 
 
 // Animation Components
-import Reveal from './Components/Reveal'
+// import Reveal from './Components/Reveal'
 
 function App() {
 
@@ -37,35 +36,35 @@ function App() {
         <div className='relative'>
 
           {/* Home Section */}
-          {/* <Home /> */}
+          <Home />
 
 
 
           {/* About Section */}
-          {/* <About /> */}
+          <About />
 
 
 
           {/* Skill Section */}
-          {/* <Skill /> */}
+          <Skill />
 
 
 
           {/* Project Section */}
-          {/* <Projects /> */}
+          <Projects />
 
 
 
           {/* Activity Section */}
-          {/* <Activity /> */}
+          <Activity />
 
 
 
           {/* Contact Section */}
-          {/* <Contact /> */}
+          <Contact />
 
 
-          <Reveal>
+          {/* <Reveal>
             <Home />
           </Reveal>
 
@@ -88,7 +87,7 @@ function App() {
 
           <Reveal>
             <Contact />
-          </Reveal>
+          </Reveal> */}
 
 
         </div>

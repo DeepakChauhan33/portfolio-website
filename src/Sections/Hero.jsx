@@ -25,7 +25,7 @@ const Hero = () => {
   const { scrollY } = useScroll();
 
 
-  
+
 
   const y = useTransform(
     scrollY,
@@ -73,14 +73,15 @@ const Hero = () => {
           id='home'
           className='relative z-10 h-[80lvh] md:min-h-screen flex items-center justify-center'>
 
-          <motion.div
-            style={{ y, scale }}
+          <div
+
             className='flex flex-col justify-center items-start md:items-center gap-y-6 md:gap-y-10 px-4 '>
 
-            <h2
+            <motion.h2
+              style={{ y, scale }}
               className={`text-6xl xs:text-4xl sm:text-6xl lg:text-7xl ${theme === 'dark' ? "text-slate-200" : "text-zinc-800"} font-extrabold text-start md:text-center`}>
-              Hi, I'm Deepak, a <br /> <strong className={`text-green-300`}> Full Stack</strong> Developer
-            </h2>
+              Hi, I'm Deepak, a <br /> <strong className={` text-green-300`}> Full Stack</strong> Developer
+            </motion.h2>
 
             <p
               className={`w-full md:w-1/2 text-start lg:text-center text-md sm:text-md lg:text-xl font-normal ${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}`}>
@@ -105,7 +106,7 @@ const Hero = () => {
 
             </div>
 
-          </motion.div>
+          </div>
 
         </section >
       </div >
