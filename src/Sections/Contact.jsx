@@ -177,7 +177,7 @@ const Contact = () => {
             Get In Touch
           </h2>
 
-          <div className='hidden md:block border-t grow ml-4 border-gray-400'></div>
+          <div className="flex-grow h-[3px] ml-4 bg-gradient-to-r from-transparent via-purple-500 to-transparent" />
         </div>
 
 
@@ -191,18 +191,18 @@ const Contact = () => {
 
               {/* EMAIL */}
               <li className={`group flex px-4 py-4 rounded-lg items-center space-x-5 overflow-hidden
-          transition-all duration-300
+                  transition-all duration-300
 
-          ${theme === "dark"
+                  ${theme === "dark"
                   ? "bg-blue-950/30 border border-white/10 hover:border-gray-500"
                   : "bg-white/70 border border-gray-200 shadow-lg backdrop-blur-md hover:shadow-xl"
                 }`}>
 
                 <span className={`rounded-xl p-3 text-2xl font-bold
-            transition-transform duration-300 ease-in-out
-            group-hover:scale-105
+                      transition-transform duration-300 ease-in-out
+                      group-hover:scale-105
 
-            ${theme === "dark"
+                      ${theme === "dark"
                     ? "bg-gray-700 text-white"
                     : "bg-teal-700 text-white"
                   }`}>
@@ -212,7 +212,7 @@ const Contact = () => {
                 <div className='flex flex-col'>
 
                   <span className={`text-md md:text-lg font-semibold
-              ${theme === "dark"
+                        ${theme === "dark"
                       ? "text-green-400"
                       : "text-teal-600"
                     }`}>

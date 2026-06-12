@@ -24,7 +24,7 @@ const Activity = () => {
                     <h2 className="text-xl sm:text-2xl lg:text-4xl font-medium">
                         GitHub Activity
                     </h2>
-                    <div className="flex-grow border-t ml-4"></div>
+                    <div className="flex-grow h-[3px] ml-4 bg-gradient-to-r from-transparent via-purple-500 to-transparent" />
                 </div>
             </div>
 
