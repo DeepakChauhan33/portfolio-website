@@ -40,7 +40,7 @@ const ProjectCard = ({ project }) => {
             {/* Image */}
             <div className='relative overflow-hidden rounded-b-3xl p-2'>
 
-                <a href={project.link}>
+                <a href={project.link} target='_blank'>
                     <img
                         src={project.image}
                         alt={project.name}
