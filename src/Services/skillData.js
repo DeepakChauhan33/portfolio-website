@@ -86,14 +86,14 @@ const skill = [
 
     {
         "name": "Node JS",
-        "category": "library",
+        "category": "all",
         "image": node_js
     },
 
 
     {
         "name": "Express JS",
-        "category": "library",
+        "category": "frameWork",
         "image": express_js
     },
 
