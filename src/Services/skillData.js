@@ -6,6 +6,7 @@ import mongoDB from '../assets/techStackIMG/MongoDB.svg';
 import bootstrap from '../assets/techStackIMG/bootstrap.svg';
 import tailwind from "../assets/techStackIMG/Tailwind.png";
 import react from '../assets/techStackIMG/React.png';
+import nextjs from '../assets/techStackIMG/nextjs.png';
 import redux from '../assets/techStackIMG/redux.svg';
 import java from '../assets/techStackIMG/java.svg';
 import materialUI from '../assets/techStackIMG/material-ui.webp';
@@ -56,7 +57,7 @@ const skill = [
 
     {
         "name": "Bootstrap",
-        "category": "library",
+        "category": "frameWork",
         "image": bootstrap
     },
 
@@ -70,6 +71,12 @@ const skill = [
         "name": "React JS",
         "category": "library",
         "image": react
+    },
+
+    {
+        "name": "Next JS",
+        "category": "frameWork",
+        "image": nextjs
     },
 
     {

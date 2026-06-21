@@ -8,6 +8,7 @@ const SkillCategory = ({ setCategory }) => {
 
             <button className='border text-start px-4 py-0.5 rounded-sm shadow-md text-gray-400 border-white transition-all hover:backdrop:backdrop-blur-2xl hover:border-blue-800 hover:text-white cursor-pointer ease-in-out duration-400 ' onClick={() => setCategory("all")}>All</button>
             <button className='border text-start px-4 py-0.5 rounded-sm shadow-md text-gray-400 border-white font-medium transition-all hover:backdrop:backdrop-blur-2xl hover:border-blue-800 hover:text-white cursor-pointer ease-in-out duration-400' onClick={() => setCategory("library")}>Libraries</button>
+            <button className='border text-start px-4 py-0.5 rounded-sm shadow-md text-gray-400 border-white font-medium transition-all hover:backdrop:backdrop-blur-2xl hover:border-blue-800 hover:text-white cursor-pointer ease-in-out duration-400' onClick={() => setCategory("frameWork")}>Frame work</button>
             <button className='border text-start px-4 py-0.5 rounded-sm shadow-md text-gray-400 border-white font-medium transition-all hover:backdrop:backdrop-blur-2xl hover:border-blue-800 hover:text-white cursor-pointer ease-in-out duration-400' onClick={() => setCategory("language")}>Languages</button>
             <button className='border text-start px-4 py-0.5 rounded-sm shadow-md text-gray-400 border-white font-medium transition-all hover:backdrop:backdrop-blur-2xl hover:border-blue-800 hover:text-white cursor-pointer ease-in-out duration-400' onClick={() => setCategory("tool")}>Tools</button>
         </div>
