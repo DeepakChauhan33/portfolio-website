@@ -12,7 +12,7 @@ import Particles from '../Components/Particles'
 
 
 // RESUME
-import resume from '../assets/Deepak_Chauhan_Resume.pdf';
+import resume from '../assets/Deepak_Chauhan_Resume.pdf'
 
 
 
